@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="body">
 <head>
   <meta charset="UTF-8">
   <title>Форма для отзыва</title>
 </head>
-<body>
+<body class="page__body">
 <header class="main-header">
   <a class="main-header__logo">
     <img src="" width="" height="" alt="логотип Седоны">
@@ -42,64 +42,80 @@
       <p class="review__intro">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами
         достопримечательностях</p>
     </header>
-    <div>
-      <h3 class="review-full-name">Представьтесь:</h3>
-      <form class="review-full-name__form" action="">
-        <div><label class="review-name" for="name">Имя*:</label>
-          <input type="text" id="name" name="name" value="Пётр" required></div>
-        <div><label class="review-surname" for="surname">Фамилия*:</label>
-          <input type="text" id="surname" name="surname" value="Пустота" required></div>
-        <div><label class="review-patronymic" for="patronymic">Отчество*:</label>
-          <input type="text" id="patronymic" name="patronymic" value="Викторович" required></div>
-      </form>
-    </div>
-    <div>
-      <h3 class="review-contacts">Контактная информация:</h3>
-      <form class="review-contacts__form" action="">
-        <label class="review-phone" for="phone">Контактный телефон*:</label>
-        <input type="text" id="phone" name="phone" value="Введите телефон" required>
-        <label class="review-email" for="email">Электронная почта*:</label>
-        <input type="text" id="email" name="email" value="Введите e-mail" required>
-      </form>
-    </div>
-    <div>
-      <h3 class="review-impression">Ваше общее впечатление:</h3>
-      <form class="review-impression__form" action="">
-        <input type="radio" id="positive" name="impression">
-        <label class="review-impression" for="positive">Скорее положительное</label>
-        <input type="radio" id="negative" name="impression">
-        <label class="review-impression" for="negative">Скорее отрицательное</label>
-        <input type="radio" id="nothing" name="impression">
-        <label class="review-impression" for="nothing">Затрудняюсь ответить</label>
-      </form>
-    </div>
-    <div>
-      <h3 class="review-places">Посещенные достопримечательности:</h3>
-      <form class="review-places__form" action="">
-        <input type="checkbox" id="bridge" checked>
-        <label class="review-places" for="bridge">Мост Дьявола</label>
-        <input type="checkbox" id="mountain" checked>
-        <label class="review-places" for="mountain">Гора-Колокол</label>
-        <input type="checkbox" id="park" checked>
-        <label class="review-places" for="park">Слайд-парк</label>
-        <input type="checkbox" id="rocks">
-        <label class="review-places" for="rocks">Красные скалы</label>
-      </form>
-    </div>
-    <div>
-      <h3 class="review-emotions">Опишите свои эмоции:</h3>
-      <form class="review-places__form" action="">
-        <textarea rows="5">Опишите подробно все свои восторги
-        </textarea>
-      </form>
-    </div>
-    <button type="submit">Отправить отзыв</button>
+    <form class="review-full-name__form" action="http://htmlacademy.ru" method="get">
+      <div class="review-full-name">
+        <h3 class="review-full-name__title">Представьтесь:</h3>
+        <div>
+          <label class="review-name" for="name">Имя*:</label>
+          <input type="text" id="name" name="name" value="Пётр" required>
+        </div>
+        <div>
+          <label class="review-surname" for="surname">Фамилия*:</label>
+          <input type="text" id="surname" name="surname" value="Пустота" required>
+        </div>
+        <div>
+          <label class="review-patronymic" for="patronymic">Отчество*:</label>
+          <input type="text" id="patronymic" name="patronymic" value="Викторович" required>
+        </div>
+      </div>
+      <div>
+        <h3 class="review-contacts">Контактная информация:</h3>
+        <div>
+          <label class="review-phone" for="phone">Контактный телефон*:</label>
+          <input type="text" id="phone" name="phone" value="Введите телефон" required>
+        </div>
+        <div>
+          <label class="review-email" for="email">Электронная почта*:</label>
+          <input type="text" id="email" name="email" value="Введите e-mail" required>
+        </div>
+      </div>
+      <div>
+        <h3 class="review-impression">Ваше общее впечатление:</h3>
+        <div>
+          <input type="radio" id="positive" name="impression">
+          <label class="review-impression" for="positive">Скорее положительное</label>
+        </div>
+        <div>
+          <input type="radio" id="negative" name="impression">
+          <label class="review-impression" for="negative">Скорее отрицательное</label>
+        </div>
+        <div>
+          <input type="radio" id="nothing" name="impression">
+          <label class="review-impression" for="nothing">Затрудняюсь ответить</label>
+        </div>
+      </div>
+      <div>
+        <h3 class="review-places">Посещенные достопримечательности:</h3>
+        <div>
+          <input type="checkbox" id="bridge" checked>
+          <label class="review-places" for="bridge">Мост Дьявола</label>
+        </div>
+        <div>
+          <input type="checkbox" id="mountain" checked>
+          <label class="review-places" for="mountain">Гора-Колокол</label>
+        </div>
+        <div>
+          <input type="checkbox" id="park" checked>
+          <label class="review-places" for="park">Слайд-парк</label>
+        </div>
+        <div>
+          <input type="checkbox" id="rocks">
+          <label class="review-places" for="rocks">Красные скалы</label>
+        </div>
+      </div>
+      <div>
+        <h3 class="review-emotions">Опишите свои эмоции:</h3>
+        <textarea name="comment" placeholder="Опишите подробно все свои восторги"></textarea>
+      </div>
+      <button type="submit">Отправить отзыв</button>
+    </form>
   </section>
 </main>
 <footer class="main-footer">
   <div class="main-footer__wrapper">
     <div class="main-footer">
-      <div class="main-footer__social">
+      <img class="hashtag main-footer__hashtag" src="" alt="Хэштэг Седоны">
+      <div class="social main-footer__social">
         <ul class="social__list">
           <li class="social__item">
             <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Вконтакте</a>
@@ -112,7 +128,7 @@
           </li>
         </ul>
       </div>
-      <div class="copyright">
+      <div class="copyright main-footer__copyright">
         <b class="copyright__text">Разработано:</b>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
       </div>

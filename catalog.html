@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="body">
 <head>
   <meta charset="UTF-8">
   <title>Каталог Седоны</title>
 </head>
-<body>
+<body class="page__body">
 <header class="main-header">
   <a class="main-header__logo">
-    <img src="" width="" height="" alt="логотип Седоны">
+    <img src="images/icons/logo.svg" width="185" height="96" alt="логотип Седоны">
   </a>
   <nav class="main-nav">
     <button class="main-nav__toggle" type="button">
@@ -34,7 +34,7 @@
 <main class="catalog-container">
   <h1 class="visually hidden">Седона</h1>
   <div>
-    <img src="" width="" height="" alt="Логотип Седоны">
+    <img src="images/icons/text-index.svg" width="461" height="350" alt="Логотип Седоны">
   </div>
   <section class="attractions">
     <header class="attractions__header">
@@ -45,32 +45,40 @@
     </header>
     <ul class="attractions__list">
       <li class="attractions__item">
-        <a class="" href="#"><img src="" width="" height="" alt="Дорога в степи на фоне заката"></a>
-        <h3 class="attraction__title"><a class="" href="#">Неродные просторы</a></h3>
-        <p class="attractions__">Автор фото: Борис</p>
-        <img src="" width="" height="" alt="Значок лайка">
-        <span class="attractions__">1350</span>
+        <a class="" href="#"><img src="images/sunset-road.jpg" width="280" height="280" alt="Дорога в степи на фоне заката"></a>
+        <div>
+          <h3 class="attractions__title">Неродные просторы</h3>
+          <p class="attractions__author">Автор фото: Борис</p>
+          <a href="#" class="attractions__like"><img src="" width="" height="" alt="Значок лайка">
+            <span class="attractions__like-counter">1350</span></a>
+        </div>
       </li>
       <li class="attractions__item">
-        <a class="" href="#"><img src="" width="" height="" alt="Фотография растительности в Седоне"></a>
-        <h3 class="attraction__title">Местная растительность</h3>
-        <p class="attractions__">Автор фото: Сергей</p>
-        <img src="" width="" height="" alt="Значок лайка">
-        <span class="attractions__">143</span>
+        <a class="" href="#"><img src="images/plants.jpg" width="280" height="280" alt="Фотография растительности в Седоне"></a>
+        <div>
+          <h3 class="attractions__title">Местная растительность</h3>
+          <p class="attractions__author">Автор фото: Сергей</p>
+          <a href="#" class="attractions__like"><img src="" width="" height="" alt="Значок лайка">
+            <span class="attractions__like-counter">143</span></a>
+        </div>
       </li>
       <li class="attractions__item">
-        <a class="" href="#"><img src="" width="" height="" alt="Фотография растительности в Седоне">
-          <h3 class="attraction__title">Дорога на Север</h3></a>
-        <p class="attractions__">Автор фото: Петр</p>
-        <img src="" width="" height="" alt="Значок лайка">
-        <span class="attractions__">96</span>
+        <a class="" href="#"><img src="images/nothern-road.jpg" width="280" height="280" alt="Фотография дороги на свере в Седоне"></a>
+        <div>
+          <h3 class="attractions__title">Дорога на Север</h3>
+          <p class="attractions__author">Автор фото: Петр</p>
+          <a href="#" class="attractions__like"><img src="" width="" height="" alt="Значок лайка">
+            <span class="attractions__like-counter">96</span></a>
+        </div>
       </li>
       <li class="attractions__item">
-        <a class="" href="#"><img src="" width="" height="" alt="Фотография растительности в Седоне">
-          <h3 class="attraction__title">Мост Дьявола</h3></a>
-        <p class="attractions__">Автор фото: Антон</p>
-        <img src="" width="" height="" alt="Значок лайка">
-        <span class="attractions__">254</span>
+        <div>
+          <a class="" href="#"><img src="images/devil's-bridge.jpg" width="280" height="280" alt="Фотография моста Дьявола в Седоне"></a>
+          <h3 class="attraction__title">Мост Дьявола</h3>
+          <p class="attractions__author">Автор фото: Антон</p>
+          <a href="#" class="attractions__like"><img src="" width="" height="" alt="Значок лайка">
+            <span class="attractions__like-counter">254</span></a>
+        </div>
       </li>
     </ul>
   </section>
@@ -86,7 +94,8 @@
 <footer class="main-footer">
   <div class="main-footer__wrapper">
     <div class="main-footer">
-      <div class="main-footer__social">
+      <img class="hashtag main-footer__hashtag" src="" alt="Хэштэг Седоны">
+      <div class="social main-footer__social">
         <ul class="social__list">
           <li class="social__item">
             <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Вконтакте</a>
@@ -99,7 +108,7 @@
           </li>
         </ul>
       </div>
-      <div class="copyright">
+      <div class="copyright main-footer__copyright">
         <b class="copyright__text">Разработано:</b>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
       </div>
