@@ -1,2 +1,21 @@
 // Начните писать стили здесь
+@import 'variables';
+@import 'fonts';
+@import 'global';
+
+@import 'blocks/advantages';
+@import 'blocks/attractions';
+@import 'blocks/copyright';
+@import 'blocks/form-container';
+@import 'blocks/main-container';
+@import 'blocks/main-footer';
+@import 'blocks/main-header';
+@import 'blocks/main-nav';
 @import 'blocks/page';
+@import 'blocks/review';
+@import 'blocks/search';
+@import 'blocks/site-list';
+@import 'blocks/slider';
+@import 'blocks/social';
+@import 'blocks/sublist';
+@import 'blocks/video-content';
