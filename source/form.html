@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html lang="en" class="body">
+<html lang="en" class="page">
 <head>
   <meta charset="UTF-8">
   <title>Форма для отзыва</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="page__body">
 <header class="main-header">
@@ -33,8 +34,8 @@
 </header>
 <main class="form-container">
   <h1 class="visually-hidden">Отзыв о Седоне</h1>
-  <div>
-    <img src="" width="" height="" alt="Логотип Седоны">
+  <div class="main-container__background-catalog">
+    <img src="../images/icons/SEDONA.svg" width="229" height="39" alt="Седона">
   </div>
   <section class="review">
     <header class="review__header">
@@ -42,70 +43,70 @@
       <p class="review__intro">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами
         достопримечательностях</p>
     </header>
-    <form class="review-full-name__form" action="http://htmlacademy.ru" method="get">
-      <div class="review-full-name">
-        <h3 class="review-full-name__title">Представьтесь:</h3>
+    <form class="review__full-name-form" action="http://htmlacademy.ru" method="get">
+      <div class="review__full-name">
+        <h3 class="review__full-name-title">Представьтесь:</h3>
         <div>
-          <label class="review-name" for="name">Имя*:</label>
-          <input type="text" id="name" name="name" value="Пётр" required>
+          <label class="review__name" for="name">Имя*:</label>
+          <input class="review__name-example" type="text" id="name" name="name" value="Пётр" required>
         </div>
         <div>
-          <label class="review-surname" for="surname">Фамилия*:</label>
-          <input type="text" id="surname" name="surname" value="Пустота" required>
+          <label class="review__surname" for="surname">Фамилия*:</label>
+          <input class="review__name-example" type="text" id="surname" name="surname" value="Пустота" required>
         </div>
         <div>
-          <label class="review-patronymic" for="patronymic">Отчество*:</label>
-          <input type="text" id="patronymic" name="patronymic" value="Викторович" required>
-        </div>
-      </div>
-      <div>
-        <h3 class="review-contacts">Контактная информация:</h3>
-        <div>
-          <label class="review-phone" for="phone">Контактный телефон*:</label>
-          <input type="text" id="phone" name="phone" value="Введите телефон" required>
-        </div>
-        <div>
-          <label class="review-email" for="email">Электронная почта*:</label>
-          <input type="text" id="email" name="email" value="Введите e-mail" required>
+          <label class="review__patronymic" for="patronymic">Отчество*:</label>
+          <input class="review__name-example" type="text" id="patronymic" name="patronymic" value="Викторович" required>
         </div>
       </div>
       <div>
-        <h3 class="review-impression">Ваше общее впечатление:</h3>
+        <h3 class="review__contacts-title">Контактная информация:</h3>
+        <div>
+          <label class="review__phone" for="phone">Контактный телефон*:</label>
+          <input class="review__contacts-example" type="text" id="phone" name="phone" value="Введите телефон" required>
+        </div>
+        <div>
+          <label class="review__email" for="email">Электронная почта*:</label>
+          <input class="review__contacts-example" type="text" id="email" name="email" value="Введите e-mail" required>
+        </div>
+      </div>
+      <div>
+        <h3 class="review__impression-title">Ваше общее впечатление:</h3>
         <div>
           <input type="radio" id="positive" name="impression">
-          <label class="review-impression" for="positive">Скорее положительное</label>
+          <label class="review__impression" for="positive">Скорее положительное</label>
         </div>
         <div>
           <input type="radio" id="negative" name="impression">
-          <label class="review-impression" for="negative">Скорее отрицательное</label>
+          <label class="review__impression" for="negative">Скорее отрицательное</label>
         </div>
         <div>
           <input type="radio" id="nothing" name="impression">
-          <label class="review-impression" for="nothing">Затрудняюсь ответить</label>
+          <label class="review__impression" for="nothing">Затрудняюсь ответить</label>
         </div>
       </div>
       <div>
-        <h3 class="review-places">Посещенные достопримечательности:</h3>
+        <h3 class="review__places-title">Посещенные достопримечательности:</h3>
         <div>
           <input type="checkbox" id="bridge" checked>
-          <label class="review-places" for="bridge">Мост Дьявола</label>
+          <label class="review__places" for="bridge">Мост Дьявола</label>
         </div>
         <div>
           <input type="checkbox" id="mountain" checked>
-          <label class="review-places" for="mountain">Гора-Колокол</label>
+          <label class="review__places" for="mountain">Гора-Колокол</label>
         </div>
         <div>
           <input type="checkbox" id="park" checked>
-          <label class="review-places" for="park">Слайд-парк</label>
+          <label class="review__places" for="park">Слайд-парк</label>
         </div>
         <div>
           <input type="checkbox" id="rocks">
-          <label class="review-places" for="rocks">Красные скалы</label>
+          <label class="review__places" for="rocks">Красные скалы</label>
         </div>
       </div>
       <div>
-        <h3 class="review-emotions">Опишите свои эмоции:</h3>
-        <textarea name="comment" placeholder="Опишите подробно все свои восторги"></textarea>
+        <h3 class="review-emotions__title">Опишите свои эмоции:</h3>
+        <textarea class="review__emotions-text" name="comment" placeholder="Опишите подробно все свои восторги"></textarea>
       </div>
       <button type="submit">Отправить отзыв</button>
     </form>

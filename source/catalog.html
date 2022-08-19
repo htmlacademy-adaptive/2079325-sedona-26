@@ -1,13 +1,14 @@
 <!DOCTYPE html>
-<html lang="en" class="body">
+<html lang="en" class="page">
 <head>
   <meta charset="UTF-8">
   <title>Каталог Седоны</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="page__body">
 <header class="main-header">
   <a class="main-header__logo">
-    <img src="images/icons/logo.svg" width="185" height="96" alt="логотип Седоны">
+    <img src="../images/icons/logo.svg" width="185" height="96" alt="логотип Седоны">
   </a>
   <nav class="main-nav">
     <button class="main-nav__toggle" type="button">
@@ -33,8 +34,8 @@
 </header>
 <main class="catalog-container">
   <h1 class="visually hidden">Седона</h1>
-  <div>
-    <img src="images/icons/text-index.svg" width="461" height="350" alt="Логотип Седоны">
+  <div class="main-container__background-catalog">
+    <img src="../images/icons/SEDONA.svg" width="229" height="39" alt="Седона">
   </div>
   <section class="attractions">
     <header class="attractions__header">
@@ -45,7 +46,7 @@
     </header>
     <ul class="attractions__list">
       <li class="attractions__item">
-        <a class="" href="#"><img src="images/sunset-road.jpg" width="280" height="280" alt="Дорога в степи на фоне заката"></a>
+        <a class="" href="#"><img src="../images/sunset-road.jpg" width="280" height="280" alt="Дорога в степи на фоне заката"></a>
         <div>
           <h3 class="attractions__title">Неродные просторы</h3>
           <p class="attractions__author">Автор фото: Борис</p>
@@ -54,7 +55,7 @@
         </div>
       </li>
       <li class="attractions__item">
-        <a class="" href="#"><img src="images/plants.jpg" width="280" height="280" alt="Фотография растительности в Седоне"></a>
+        <a class="" href="#"><img src="../images/plants.jpg" width="280" height="280" alt="Фотография растительности в Седоне"></a>
         <div>
           <h3 class="attractions__title">Местная растительность</h3>
           <p class="attractions__author">Автор фото: Сергей</p>
@@ -63,7 +64,7 @@
         </div>
       </li>
       <li class="attractions__item">
-        <a class="" href="#"><img src="images/nothern-road.jpg" width="280" height="280" alt="Фотография дороги на свере в Седоне"></a>
+        <a class="" href="#"><img src="../images/nothern-road.jpg" width="280" height="280" alt="Фотография дороги на свере в Седоне"></a>
         <div>
           <h3 class="attractions__title">Дорога на Север</h3>
           <p class="attractions__author">Автор фото: Петр</p>
@@ -73,8 +74,8 @@
       </li>
       <li class="attractions__item">
         <div>
-          <a class="" href="#"><img src="images/devil's-bridge.jpg" width="280" height="280" alt="Фотография моста Дьявола в Седоне"></a>
-          <h3 class="attraction__title">Мост Дьявола</h3>
+          <a class="" href="#"><img src="../images/devil's-bridge.jpg" width="280" height="280" alt="Фотография моста Дьявола в Седоне"></a>
+          <h3 class="attractions__title">Мост Дьявола</h3>
           <p class="attractions__author">Автор фото: Антон</p>
           <a href="#" class="attractions__like"><img src="" width="" height="" alt="Значок лайка">
             <span class="attractions__like-counter">254</span></a>
@@ -86,9 +87,7 @@
     <p class="video-content__title">Все еще сомневаетесь?</p>
     <p class="video-content__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в
       очередной раз!</p>
-    <video class="video-content__video">
-      <source src="">
-    </video>
+    <img class="video-content__video" src="../images/video-mobile.jpg" width="280" height="177" alt="Видеопрезентация о Седоне">
   </section>
 </main>
 <footer class="main-footer">
