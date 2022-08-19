@@ -34,8 +34,8 @@
 </header>
 <main class="form-container">
   <h1 class="visually-hidden">Отзыв о Седоне</h1>
-  <div>
-    <img src="" width="" height="" alt="Логотип Седоны">
+  <div class="main-container__background-catalog">
+    <img src="../images/icons/SEDONA.svg" width="229" height="39" alt="Седона">
   </div>
   <section class="review">
     <header class="review__header">
@@ -48,30 +48,30 @@
         <h3 class="review-full-name__title">Представьтесь:</h3>
         <div>
           <label class="review-name" for="name">Имя*:</label>
-          <input type="text" id="name" name="name" value="Пётр" required>
+          <input class="review-name__example" type="text" id="name" name="name" value="Пётр" required>
         </div>
         <div>
           <label class="review-surname" for="surname">Фамилия*:</label>
-          <input type="text" id="surname" name="surname" value="Пустота" required>
+          <input class="review-name__example" type="text" id="surname" name="surname" value="Пустота" required>
         </div>
         <div>
           <label class="review-patronymic" for="patronymic">Отчество*:</label>
-          <input type="text" id="patronymic" name="patronymic" value="Викторович" required>
+          <input class="review-name__example" type="text" id="patronymic" name="patronymic" value="Викторович" required>
         </div>
       </div>
       <div>
-        <h3 class="review-contacts">Контактная информация:</h3>
+        <h3 class="review-contacts__title">Контактная информация:</h3>
         <div>
           <label class="review-phone" for="phone">Контактный телефон*:</label>
-          <input type="text" id="phone" name="phone" value="Введите телефон" required>
+          <input class="review-contacts__example" type="text" id="phone" name="phone" value="Введите телефон" required>
         </div>
         <div>
           <label class="review-email" for="email">Электронная почта*:</label>
-          <input type="text" id="email" name="email" value="Введите e-mail" required>
+          <input class="review-contacts__example" type="text" id="email" name="email" value="Введите e-mail" required>
         </div>
       </div>
       <div>
-        <h3 class="review-impression">Ваше общее впечатление:</h3>
+        <h3 class="review-impression__title">Ваше общее впечатление:</h3>
         <div>
           <input type="radio" id="positive" name="impression">
           <label class="review-impression" for="positive">Скорее положительное</label>
@@ -86,7 +86,7 @@
         </div>
       </div>
       <div>
-        <h3 class="review-places">Посещенные достопримечательности:</h3>
+        <h3 class="review-places__title">Посещенные достопримечательности:</h3>
         <div>
           <input type="checkbox" id="bridge" checked>
           <label class="review-places" for="bridge">Мост Дьявола</label>
@@ -105,8 +105,8 @@
         </div>
       </div>
       <div>
-        <h3 class="review-emotions">Опишите свои эмоции:</h3>
-        <textarea name="comment" placeholder="Опишите подробно все свои восторги"></textarea>
+        <h3 class="review-emotions__title">Опишите свои эмоции:</h3>
+        <textarea class="review-emotions__text" name="comment" placeholder="Опишите подробно все свои восторги"></textarea>
       </div>
       <button type="submit">Отправить отзыв</button>
     </form>
