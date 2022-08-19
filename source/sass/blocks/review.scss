@@ -12,36 +12,36 @@
   text-transform: uppercase;
 }
 
-.review-full-name__title,
-.review-contacts__title,
-.review-impression__title,
-.review-places__title,
-.review-emotions__title {
+.review__full-name-title,
+.review__contacts-title,
+.review__impression-title,
+.review__places-title,
+.review__emotions-title {
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
   text-transform: uppercase;
 }
 
-.review-name,
-.review-surname,
-.review-patronymic,
-.review-phone,
-.review-email {
+.review__name,
+.review__surname,
+.review__patronymic,
+.review__phone,
+.review__email {
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
 }
 
-.review-name__example {
+.review__name-example {
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
   color: #000000;
 }
 
-.review-contacts__example {
+.review__contacts-example {
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
@@ -49,24 +49,23 @@
   opacity: 30%;
 }
 
-.review-impression {
+.review__impression {
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
   color: #000000;
 }
 
-.review-places {
+.review__places {
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
   color: #000000;
 }
 
-.review-emotions__text {
+.review__emotions-text {
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
-
 }
