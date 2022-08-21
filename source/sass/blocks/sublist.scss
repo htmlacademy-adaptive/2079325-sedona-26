@@ -11,3 +11,9 @@
   line-height: 21px;
   text-transform: uppercase;
 }
+
+.sublist {
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+}
