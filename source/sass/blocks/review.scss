@@ -69,3 +69,15 @@
   font-size: 18px;
   line-height: 26px;
 }
+
+.review__full-name-form {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 380px 380px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 550px 550px;
+  }
+}

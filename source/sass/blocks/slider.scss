@@ -16,3 +16,14 @@
   text-transform: uppercase;
 }
 
+.slider__item-devil,
+.slider__item-city {
+  background-color: #81b3d2;
+  color: #ffffff;
+  display: flex;
+}
+
+.slider__item-wrapper {
+  background-color: #eeeeee;
+  display: flex;
+}

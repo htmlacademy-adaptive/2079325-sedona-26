@@ -29,3 +29,15 @@
   font-size: 14px;
   line-height: 21px;
 }
+
+.attractions__list {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 324px 324px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+  }
+}

@@ -35,7 +35,7 @@
 <main class="form-container">
   <h1 class="visually-hidden">Отзыв о Седоне</h1>
   <div class="main-container__background-catalog">
-    <img src="../images/icons/SEDONA.svg" width="229" height="39" alt="Седона">
+    <img src="images/icons/SEDONA.svg" width="229" height="39" alt="Седона">
   </div>
   <section class="review">
     <header class="review__header">
@@ -70,7 +70,7 @@
           <input class="review__contacts-example" type="text" id="email" name="email" value="Введите e-mail" required>
         </div>
       </div>
-      <div>
+      <div class="review__impression-wrapper">
         <h3 class="review__impression-title">Ваше общее впечатление:</h3>
         <div>
           <input type="radio" id="positive" name="impression">
@@ -105,7 +105,7 @@
         </div>
       </div>
       <div>
-        <h3 class="review-emotions__title">Опишите свои эмоции:</h3>
+        <h3 class="review__emotions_title">Опишите свои эмоции:</h3>
         <textarea class="review__emotions-text" name="comment" placeholder="Опишите подробно все свои восторги"></textarea>
       </div>
       <button type="submit">Отправить отзыв</button>
@@ -114,7 +114,6 @@
 </main>
 <footer class="main-footer">
   <div class="main-footer__wrapper">
-    <div class="main-footer">
       <img class="hashtag main-footer__hashtag" src="" alt="Хэштэг Седоны">
       <div class="social main-footer__social">
         <ul class="social__list">
@@ -133,7 +132,6 @@
         <b class="copyright__text">Разработано:</b>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
       </div>
-    </div>
   </div>
 </footer>
 </body>

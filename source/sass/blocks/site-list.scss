@@ -10,3 +10,16 @@
 .site-list__item {
   list-style-type: none;
 }
+
+@media (min-width: $tablet-width) {
+  .site-list {
+    width: 570px;
+    display: flex;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .site-list {
+    width: 780px;
+  }
+}

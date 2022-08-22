@@ -2,13 +2,14 @@
 <html lang="en" class="page">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Седона</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="page__body">
 <header class="main-header">
   <a class="main-header__logo" href="index.html">
-    <img src="../images/icons/logo.svg" width="185" height="96" alt="логотип Седоны">
+    <img src="images/icons/logo.svg" width="185" height="96" alt="логотип Седоны">
   </a>
   <nav class="main-header__nav main-nav">
     <button class="main-nav__toggle" type="button">
@@ -35,7 +36,7 @@
 <main class="main-container">
   <h1 class="visually hidden">Седона</h1>
   <div class="main-container__background">
-    <img src="../images/icons/text-index.svg" width="461" height="350" alt="Приветственный текст">
+    <img src="images/icons/text-index.svg" width="461" height="350" alt="Приветственный текст">
   </div>
   <section class="advantages">
     <header class="advantages__header">
@@ -45,44 +46,47 @@
     </header>
     <ul class="advantages__list slider">
       <li class="slider__item">
+        <div class="slider__item-city">
         <h3 class="slider__title">Настоящий городок
         </h3>
         <span>— №1 —</span>
         <p class="slider__description">Седона не аттракцион для туристов, там течет своя жизнь
         </p>
-        <img src="../images/photo-city-mobile.jpg" width="320" height="260" alt="Фото достопримечательностей в Седоне">
+        <img src="images/photo-city-mobile.jpg" width="320" height="260" alt="Фото достопримечательностей в Седоне">
+        </div>
         <ul class="slider__sublist sublist">
           <li class="sublist__item">
             <img src="" width="" height="" alt="Значок дома">
-            <h3 class="sublist__title">Жилье
-            </h3>
+            <h4 class="sublist__title">Жилье
+            </h4>
             <p class="sublist__description">Рекомендуем пожить в настоящем мотеле, все как в кино!
             </p>
           </li>
           <li class="sublist__item">
             <img src="" width="" height="" alt="Значок бургера">
-            <h3 class="sublist__title">Еда
-            </h3>
+            <h4 class="sublist__title">Еда
+            </h4>
             <p class="sublist__description">Всегда заказывайте фирменный бургер, Вы не разочаруетесь!
             </p>
           </li>
           <li class="sublist__item">
             <img src="" width="" height="" alt="Значок сувенира">
-            <h3 class="sublist__title">Сувениры
-            </h3>
+            <h4 class="sublist__title">Сувениры
+            </h4>
             <p class="sublist__description">Не только китайского, но и местного производства!
             </p>
           </li>
         </ul>
       </li>
-      <li class="slider__item">
+      <li class="slider__item slider__item-devil">
         <h3 class="slider__title">Там есть мость Дьявола
         </h3>
         <span>— №2 —</span>
         <p class="slider__description">Да, по нему можно пройти! Если вы осмелитесь, конечно
         </p>
-        <img src="../images/photo-bridge-mobile.jpg" width="320" height="260" alt="Фото моста Дьвола в Седоне">
+        <img src="images/photo-bridge-mobile.jpg" width="320" height="260" alt="Фото моста Дьвола в Седоне">
       </li>
+      <div class="slider__item-wrapper">
       <li class="slider__item">
         <h3 class="slider__title">Небольшая площадь
         </h3>
@@ -104,6 +108,7 @@
         <p class="slider__description">Большинство едет в гранд каньон и толпится там
         </p>
       </li>
+      </div>
     </ul>
   </section>
   <section class="search">
@@ -113,12 +118,11 @@
     <a class="search__link" href="#">Найти гостиницу</a>
   </section>
   <div class="map">
-    <img src="../images/map-mobile.jpg" width="320" height="350" alt="Карта">
+    <img src="images/map-mobile.jpg" width="320" height="350" alt="Карта">
   </div>
 </main>
 <footer class="main-footer">
   <div class="main-footer__wrapper">
-    <div class="main-footer">
       <img class="hashtag main-footer__hashtag" src="" alt="Хэштэг Седоны">
       <div class="social main-footer__social">
         <ul class="social__list">
@@ -137,7 +141,6 @@
         <b class="copyright__text">Разработано:</b>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
       </div>
-    </div>
   </div>
 </footer>
 </body>
