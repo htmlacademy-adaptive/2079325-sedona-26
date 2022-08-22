@@ -5,12 +5,13 @@
 }
 
 @media (min-width: $tablet-width) {
-.main-nav__wrapper {
-  display: flex;
-  justify-content: space-between;
-  width: 640px;
-  margin: 0 auto;
-}
+  .main-nav__wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 640px;
+    margin: 0 auto;
+  }
+
   .main-nav__toggle {
     display: none;
   }
@@ -21,4 +22,3 @@
     width: 960px;
   }
 }
-
