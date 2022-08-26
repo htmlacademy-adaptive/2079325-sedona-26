@@ -4,11 +4,22 @@
   line-height: 26px;
   text-transform: uppercase;
   text-decoration: none;
-  color: #000000;
+  color: #eeeeee;
+  padding: 17px 12px;
+  display: block;
+  text-align: center;
+  border-top: 1px solid #000000;
+  border-bottom: 1px solid #81B3D2;
+
 }
 
 .site-list__item {
   list-style-type: none;
+}
+
+.site-list {
+  min-height: 216px;
+  background-color: #81B3D2;
 }
 
 @media (min-width: $tablet-width) {

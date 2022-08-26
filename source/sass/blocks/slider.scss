@@ -20,10 +20,15 @@
 .slider__item-city {
   background-color: #81b3d2;
   color: #ffffff;
-  display: flex;
+  text-align: center;
 }
 
 .slider__item-wrapper {
   background-color: #eeeeee;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
   display: flex;
+  }
 }
+

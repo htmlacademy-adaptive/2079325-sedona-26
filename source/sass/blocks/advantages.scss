@@ -3,6 +3,7 @@
   line-height: 26px;
   font-size: 18px;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .advantages__intro {
@@ -10,4 +11,10 @@
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
+  text-align: center;
+}
+
+.advantages__list {
+  padding: 0;
+  margin: 0 auto;
 }
