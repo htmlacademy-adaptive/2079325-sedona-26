@@ -20,3 +20,60 @@
     display: flex;
   }
 }
+
+.sublist__title-house {
+  position: relative;
+  padding-top: 100px;
+}
+
+.sublist__title-house::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 0;
+  background-image: url("/source/images/icons/icon-house.svg");
+  width: 75px;
+  height: 70px;
+  margin-bottom: 20px;
+  display: block;
+  background-repeat: no-repeat;
+}
+
+.sublist__title-food {
+  position: relative;
+  padding-top: 100px;
+}
+
+.sublist__title-food::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 0;
+  background-image: url("/source/images/icons/burger.svg");
+  width: 75px;
+  height: 70px;
+  margin-bottom: 20px;
+  display: block;
+  background-repeat: no-repeat;
+}
+
+.sublist__title-gift {
+  position: relative;
+  padding-top: 100px;
+}
+
+.sublist__title-gift::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 0;
+  background-image: url("/source/images/icons/gift.svg");
+  width: 75px;
+  height: 70px;
+  margin-bottom: 20px;
+  display: block;
+  background-repeat: no-repeat;
+}

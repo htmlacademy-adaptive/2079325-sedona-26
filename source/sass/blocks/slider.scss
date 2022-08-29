@@ -21,6 +21,17 @@
   background-color: #81b3d2;
   color: #ffffff;
   text-align: center;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .slider__item--small {
+    width: 33.3333%;
+  }
 }
 
 .slider__item-wrapper {

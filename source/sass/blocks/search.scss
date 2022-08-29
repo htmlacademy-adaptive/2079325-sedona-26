@@ -1,8 +1,17 @@
-.search__title {
-  font-size: 21px;
-  line-height: 26px;
-  font-weight: 700;
-  text-transform: uppercase;
+@media (min-width: $mobile-width-only) {
+  .search__title {
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+}
+
+@media (min-width $tablet-width) {
+  .search__title {
+    font-size: 30px;
+    line-height: 26px;
+  }
 }
 
 .search__description {
