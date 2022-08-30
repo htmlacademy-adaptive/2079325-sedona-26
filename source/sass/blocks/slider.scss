@@ -28,6 +28,10 @@
   }
 }
 
+.slider__item--small {
+  background-color: #eeeeee;
+}
+
 @media (min-width: $tablet-width) {
   .slider__item--small {
     width: 33.3333%;
