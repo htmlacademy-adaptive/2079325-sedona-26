@@ -17,6 +17,14 @@
   list-style-type: none;
 }
 
+.attractions__item:nth-child(1) {
+  width: 100%;
+}
+
+.attractions__item-sunset-road {
+  width: 100%;
+}
+
 .attractions__title {
   font-weight: 700;
   font-size: 14px;
@@ -31,14 +39,17 @@
 }
 
 .attractions__list {
+  padding: 0;
+  margin: 0 auto;
+
   @media (min-width: $tablet-width) {
-    display: grid;
-    grid-template-columns: 324px 324px;
+    display: flex;
+    flex-wrap: wrap;
   }
 
   @media (min-width: $desktop-width) {
-    display: grid;
-    grid-template-columns: 400px 400px 400px;
+    display: flex;
+    flex-wrap: wrap;
   }
 }
 

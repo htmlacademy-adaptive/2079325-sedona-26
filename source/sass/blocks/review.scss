@@ -25,6 +25,7 @@
   font-size: 18px;
   line-height: 26px;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .review__name,
@@ -76,12 +77,62 @@
 
 .review__full-name-form {
   @media (min-width: $tablet-width) {
-    display: grid;
-    grid-template-columns: 380px 380px;
+    display: flex;
+    flex-wrap: wrap;
   }
 
   @media (min-width: $desktop-width) {
-    display: grid;
-    grid-template-columns: 550px 550px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.review__full-name {
+  @media (min-width: $tablet-width) {
+    width: 50%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 50%;
+  }
+}
+
+.review__contacts-wrapper {
+  @media (min-width: $tablet-width) {
+    width: 50%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 50%;
+  }
+}
+
+.review__impression-wrapper {
+  @media (min-width: $tablet-width) {
+    width: 100%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+  }
+}
+
+.review__places-wrapper {
+  @media (min-width: $tablet-width) {
+    width: 100%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+  }
+}
+
+.review__emotions-wrapper {
+  @media (min-width: $tablet-width) {
+    width: 100%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
   }
 }

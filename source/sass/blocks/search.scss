@@ -1,4 +1,4 @@
-@media (min-width: $mobile-width-only) {
+@media (max-width: $mobile-width-only) {
   .search__title {
     font-size: 21px;
     line-height: 26px;
@@ -7,7 +7,7 @@
   }
 }
 
-@media (min-width $tablet-width) {
+@media (min-width: $tablet-width) {
   .search__title {
     font-size: 30px;
     line-height: 26px;
@@ -24,6 +24,23 @@
 .search__link {
   text-decoration: none;
   text-transform: uppercase;
+  background-color: #81B3D2;
+  color: #ffffff;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+@media (min-width: $tablet-width) {
+  .search__link {
+    padding: 15px 121px 18px;
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .search__link {
+    padding: 16px 49px;
+  }
 }
 
 .search {

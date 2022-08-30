@@ -2,6 +2,7 @@
 <html lang="en" class="page">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Форма для отзыва</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -48,18 +49,18 @@
         <h3 class="review__full-name-title">Представьтесь:</h3>
         <div>
           <label class="review__name" for="name">Имя*:</label>
-          <input class="review__name-example" type="text" id="name" name="name" value="Пётр" required>
+          <input class="review__name-example" type="text" id="name" name="name" placeholder="Пётр" required>
         </div>
         <div>
           <label class="review__surname" for="surname">Фамилия*:</label>
-          <input class="review__name-example" type="text" id="surname" name="surname" value="Пустота" required>
+          <input class="review__name-example" type="text" id="surname" name="surname" placeholder="Пустота" required>
         </div>
         <div>
           <label class="review__patronymic" for="patronymic">Отчество*:</label>
-          <input class="review__name-example" type="text" id="patronymic" name="patronymic" value="Викторович" required>
+          <input class="review__name-example" type="text" id="patronymic" name="patronymic" placeholder="Викторович" required>
         </div>
       </div>
-      <div>
+      <div class="review__contacts-wrapper">
         <h3 class="review__contacts-title">Контактная информация:</h3>
         <div>
           <label class="review__phone" for="phone">Контактный телефон*:</label>
@@ -85,7 +86,7 @@
           <label class="review__impression" for="nothing">Затрудняюсь ответить</label>
         </div>
       </div>
-      <div>
+      <div class="review__places-wrapper">
         <h3 class="review__places-title">Посещенные достопримечательности:</h3>
         <div>
           <input type="checkbox" id="bridge" checked>
@@ -104,8 +105,8 @@
           <label class="review__places" for="rocks">Красные скалы</label>
         </div>
       </div>
-      <div>
-        <h3 class="review__emotions_title">Опишите свои эмоции:</h3>
+      <div class="review__emotions-wrapper">
+        <h3 class="review__emotions-title">Опишите свои эмоции:</h3>
         <textarea class="review__emotions-text" name="comment" placeholder="Опишите подробно все свои восторги"></textarea>
       </div>
       <button type="submit">Отправить отзыв</button>
