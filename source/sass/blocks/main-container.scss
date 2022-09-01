@@ -1,5 +1,5 @@
 .main-container__background {
-  background-image: url("/images/back-mobile.jpg");
+  background-image: url("../images/back-mobile.jpg");
   height: 389px;
   background-size: cover;
   padding: 90px 0;
@@ -26,7 +26,7 @@
 }
 
 .main-container__background-catalog {
-  background-image: url("/source/images/back-catalog.jpg");
+  background-image: url("../images/back-catalog.jpg");
   height: 214px;
   background-size: cover;
 }

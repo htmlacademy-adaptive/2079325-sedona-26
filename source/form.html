@@ -8,7 +8,7 @@
 </head>
 <body class="page__body">
 <header class="main-header">
-  <a class="main-header__logo">
+  <a class="main-header__logo" href="index.html">
     <img src="images/icons/logo.svg" width="185" height="96" alt="логотип Седоны">
   </a>
   <nav class="main-nav">
@@ -33,7 +33,7 @@
     </div>
   </nav>
 </header>
-<main class="form-container">
+<main class="main-container">
   <h1 class="visually-hidden">Отзыв о Седоне</h1>
   <div class="main-container__background-catalog">
     <img src="images/icons/SEDONA.svg" width="229" height="39" alt="Седона">
@@ -44,7 +44,7 @@
       <p class="review__intro">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами
         достопримечательностях</p>
     </header>
-    <form class="review__full-name-form" action="http://htmlacademy.ru" method="get">
+    <form class="review__full-name-form" action="http://echo.htmlacademy.ru" method="post">
       <div class="review__full-name">
         <h3 class="review__full-name-title">Представьтесь:</h3>
         <div>
@@ -64,44 +64,44 @@
         <h3 class="review__contacts-title">Контактная информация:</h3>
         <div>
           <label class="review__phone" for="phone">Контактный телефон*:</label>
-          <input class="review__contacts-example" type="text" id="phone" name="phone" value="Введите телефон" required>
+          <input class="review__contacts-phone" type="text" id="phone" name="phone" placeholder="Введите телефон" required>
         </div>
         <div>
           <label class="review__email" for="email">Электронная почта*:</label>
-          <input class="review__contacts-example" type="text" id="email" name="email" value="Введите e-mail" required>
+          <input class="review__contacts-email" type="text" id="email" name="email" placeholder="Введите e-mail" required>
         </div>
       </div>
       <div class="review__impression-wrapper">
         <h3 class="review__impression-title">Ваше общее впечатление:</h3>
         <div>
-          <input type="radio" id="positive" name="impression">
+          <input type="radio" id="positive" name="impression" class="visually-hidden review__radio">
           <label class="review__impression" for="positive">Скорее положительное</label>
         </div>
         <div>
-          <input type="radio" id="negative" name="impression">
+          <input type="radio" id="negative" name="impression" class="visually-hidden review__radio">
           <label class="review__impression" for="negative">Скорее отрицательное</label>
         </div>
         <div>
-          <input type="radio" id="nothing" name="impression">
+          <input type="radio" id="nothing" name="impression" class="visually-hidden review__radio">
           <label class="review__impression" for="nothing">Затрудняюсь ответить</label>
         </div>
       </div>
       <div class="review__places-wrapper">
         <h3 class="review__places-title">Посещенные достопримечательности:</h3>
         <div>
-          <input type="checkbox" id="bridge" checked>
+          <input type="checkbox" id="bridge" checked class="visually-hidden review__checkbox">
           <label class="review__places" for="bridge">Мост Дьявола</label>
         </div>
         <div>
-          <input type="checkbox" id="mountain" checked>
+          <input type="checkbox" id="mountain" checked class="visually-hidden review__checkbox">
           <label class="review__places" for="mountain">Гора-Колокол</label>
         </div>
         <div>
-          <input type="checkbox" id="park" checked>
+          <input type="checkbox" id="park" checked class="visually-hidden review__checkbox">
           <label class="review__places" for="park">Слайд-парк</label>
         </div>
         <div>
-          <input type="checkbox" id="rocks">
+          <input type="checkbox" id="rocks" class="visually-hidden review__checkbox">
           <label class="review__places" for="rocks">Красные скалы</label>
         </div>
       </div>

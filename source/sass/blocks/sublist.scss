@@ -16,6 +16,7 @@
   padding: 0;
   margin: 0 auto;
   text-align: center;
+  list-style-type: none;
   @media (min-width: $tablet-width) {
     display: flex;
   }
@@ -32,7 +33,7 @@
   left: 50%;
   transform: translateX(-50%);
   top: 0;
-  background-image: url("/images/icons/icon-house.svg");
+  background-image: url("../images/icons/icon-house.svg");
   width: 75px;
   height: 70px;
   margin-bottom: 20px;
@@ -51,7 +52,7 @@
   left: 50%;
   transform: translateX(-50%);
   top: 0;
-  background-image: url("/images/icons/burger.svg");
+  background-image: url("../images/icons/burger.svg");
   width: 75px;
   height: 70px;
   margin-bottom: 20px;
@@ -70,7 +71,7 @@
   left: 50%;
   transform: translateX(-50%);
   top: 0;
-  background-image: url("/images/icons/gift.svg");
+  background-image: url("../images/icons/gift.svg");
   width: 75px;
   height: 70px;
   margin-bottom: 20px;

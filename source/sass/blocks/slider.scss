@@ -30,6 +30,11 @@
 
 .slider__item--small {
   background-color: #eeeeee;
+  text-align: center;
+}
+
+.slider__item-devil {
+  flex-direction: row-reverse;
 }
 
 @media (min-width: $tablet-width) {
@@ -43,7 +48,13 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
-  display: flex;
+    display: flex;
   }
 }
+
+.slider__photo {
+  width: 100%;
+}
+
+
 
