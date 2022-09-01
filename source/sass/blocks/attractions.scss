@@ -3,6 +3,7 @@
   font-size: 21px;
   line-height: 26px;
   text-transform: uppercase;
+  margin: 0 auto;
 }
 
 .attractions__intro {
@@ -11,6 +12,7 @@
   line-height: 26px;
   text-transform: uppercase;
   color: #333333;
+  margin: 0 auto;
 }
 
 .attractions__item {
@@ -82,3 +84,14 @@
   }
 }
 
+.attractions__like {
+  text-decoration: none;
+  color: #000000;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+
+  @media (min-width: $desktop-width) {
+    color: #ffffff;
+  }
+}
