@@ -18,10 +18,12 @@
 .attractions__item {
   list-style-type: none;
   position: relative;
+
+@media (min-width: $tablet-width) {
+    width: 50%;
 }
 
 @media (min-width: $desktop-width) {
-  .attractions__item {
     width: 33.3333%;
   }
 }
