@@ -3,6 +3,7 @@
   font-size: 21px;
   line-height: 26px;
   text-transform: uppercase;
+  margin: 0 auto;
 }
 
 .video-content__description {
@@ -10,4 +11,24 @@
   font-size: 18px;
   line-height: 26px;
   text-transform: uppercase;
+  margin: 0 auto;
+}
+
+.video-content {
+  text-align: center;
+}
+
+.video {
+  position: relative;
+}
+
+.video__video {
+  width: 100%;
+}
+
+.video__play {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }

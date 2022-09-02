@@ -3,6 +3,7 @@
   font-size: 21px;
   line-height: 26px;
   text-transform: uppercase;
+  margin: 0 auto;
 }
 
 .attractions__intro {
@@ -11,10 +12,28 @@
   line-height: 26px;
   text-transform: uppercase;
   color: #333333;
+  margin: 0 auto;
 }
 
 .attractions__item {
   list-style-type: none;
+  position: relative;
+
+@media (min-width: $tablet-width) {
+    width: 50%;
+}
+
+@media (min-width: $desktop-width) {
+    width: 33.3333%;
+  }
+}
+
+.attractions__item:nth-child(1) {
+  width: 100%;
+}
+
+.attractions__item-photo {
+  width: 100%;
 }
 
 .attractions__title {
@@ -31,13 +50,50 @@
 }
 
 .attractions__list {
+  padding: 0;
+  margin: 0 auto;
+
   @media (min-width: $tablet-width) {
-    display: grid;
-    grid-template-columns: 324px 324px;
+    display: flex;
+    flex-wrap: wrap;
   }
 
   @media (min-width: $desktop-width) {
-    display: grid;
-    grid-template-columns: 400px 400px 400px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: self-start;
+  }
+}
+
+.attractions__header {
+  text-align: center;
+}
+
+.attractions__description {
+  width: 100%;
+
+
+  @media (min-width: $tablet-width) {
+    background-color: #F2F2F2;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+  }
+}
+
+.attractions__like {
+  text-decoration: none;
+  color: #000000;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+
+  @media (min-width: $desktop-width) {
+    color: #ffffff;
   }
 }

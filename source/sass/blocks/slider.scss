@@ -20,10 +20,41 @@
 .slider__item-city {
   background-color: #81b3d2;
   color: #ffffff;
-  display: flex;
+  text-align: center;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+}
+
+.slider__item--small {
+  background-color: #eeeeee;
+  text-align: center;
+}
+
+.slider__item-devil {
+  flex-direction: row-reverse;
+}
+
+@media (min-width: $tablet-width) {
+  .slider__item--small {
+    width: 33.3333%;
+  }
 }
 
 .slider__item-wrapper {
   background-color: #eeeeee;
-  display: flex;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
 }
+
+.slider__photo {
+  width: 100%;
+}
+
+
+
