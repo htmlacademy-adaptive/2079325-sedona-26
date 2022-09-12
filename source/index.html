@@ -11,9 +11,18 @@
   <a class="main-header__logo" href="index.html">
     <img src="images/icons/logo.svg" width="185" height="96" alt="логотип Седоны">
   </a>
-  <nav class="main-header__nav main-nav main-nav--opened">
+  <nav class="main-header__nav main-nav main-nav--closed">
     <button class="main-nav__toggle" type="button">
       <span class="visually-hidden">Открыть меню</span>
+      <svg class="main-nav__toggle--opened" width="24" height="20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M24 0H0v4h24V0ZM24 8H0v4h24V8ZM24 16H0v4h24v-4Z" fill="#81B3D2"/>
+      </svg>
+      <svg class="main-nav__toggle--closed" width="26" height="25" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M26 3.153 22.72 0 13 9.347 3.28 0 0 3.153 9.72 12.5 0 21.847 3.28 25 13 15.653 22.72 25 26 21.847 16.28 12.5 26 3.153Z"
+          fill="#ffffff"/>
+      </svg>
+
     </button>
     <div class="main-nav__wrapper">
       <ul class="main-nav__list site-list">
@@ -56,9 +65,12 @@
             </p>
           </div>
           <picture>
-            <source media="(min-width: 1200px)" srcset="images/photo-city-desktop.jpg 1x, images/photo-city-desktop@2x.jpg 2x">
-            <source media="(min-width: 768px)" srcset="images/photo-city-tablet.jpg 1x, images/photo-city-tablet@2x.jpg 2x">
-            <img class="slider__photo" src="images/photo-city-mobile.jpg" width="320" height="260" srcset="images/photo-city-mobile@2x.jpg 2x"
+            <source media="(min-width: 1200px)"
+                    srcset="images/photo-city-desktop.jpg 1x, images/photo-city-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)"
+                    srcset="images/photo-city-tablet.jpg 1x, images/photo-city-tablet@2x.jpg 2x">
+            <img class="slider__photo" src="images/photo-city-mobile.jpg" width="320" height="260"
+                 srcset="images/photo-city-mobile@2x.jpg 2x"
                  alt="Фото достопримечательностей в Седоне">
           </picture>
         </div>
@@ -72,13 +84,13 @@
           <li class="sublist__item">
             <h4 class="sublist__title sublist__title-food">Еда
             </h4>
-            <p class="sublist__description">Всегда заказывайте фирменный бургер, Вы не разочаруетесь!
+            <p class="sublist__description sublist__description-food">Всегда заказывайте фирменный бургер, Вы не разочаруетесь!
             </p>
           </li>
           <li class="sublist__item">
             <h4 class="sublist__title sublist__title-gift">Сувениры
             </h4>
-            <p class="sublist__description">Не только китайского, но и местного производства!
+            <p class="sublist__description sublist__description-gift">Не только китайского, но и местного производства!
             </p>
           </li>
         </ul>
@@ -92,9 +104,12 @@
           </p>
         </div>
         <picture>
-          <source media="(min-width: 1200px)" srcset="images/photo-devil's-bridge-desktop.jpg 1x, images/photo-devil's-bridge-desktop@2x.jpg 2x">
-          <source media="(min-width: 768px)" srcset="images/photo-devil's-bridge-tablet.jpg 1x, images/photo-devil's-bridge-tablet@2x.jpg 2x">
-          <img class="slider__photo" src="images/photo-devil's-bridge-mobile.jpg" width="320" height="260" srcset="images/photo-devil's-bridge-mobile@2x.jpg 2x"
+          <source media="(min-width: 1200px)"
+                  srcset="images/photo-devil's-bridge-desktop.jpg 1x, images/photo-devil's-bridge-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)"
+                  srcset="images/photo-devil's-bridge-tablet.jpg 1x, images/photo-devil's-bridge-tablet@2x.jpg 2x">
+          <img class="slider__photo" src="images/photo-devil's-bridge-mobile.jpg" width="320" height="260"
+               srcset="images/photo-devil's-bridge-mobile@2x.jpg 2x"
                alt="Фото моста Дьвола в Седоне">
         </picture>
       </li>
@@ -102,21 +117,21 @@
         <h3 class="slider__title">Небольшая площадь
         </h3>
         <span>— №3 —</span>
-        <p class="slider__description">Все интересные места находятся очень близко
+        <p class="slider__description slider__description-square">Все интересные места находятся очень близко
         </p>
       </li>
       <li class="slider__item slider__item--small">
-        <h3 class="slider__title">Красивая дорога
+        <h3 class="slider__title slider__title-road">Красивая дорога
         </h3>
         <span>— №4 —</span>
-        <p class="slider__description">Ехать в Седону из Лас-Вегаса совсем не скучно!
+        <p class="slider__description slider__description-road">Ехать в Седону из Лас-Вегаса совсем не скучно!
         </p>
       </li>
-      <li class="slider__item slider__item--small">
-        <h3 class="slider__title">Мало туристов
+      <li class="slider__item slider__item--small slider__item-last">
+        <h3 class="slider__title slider__title-tourists">Мало туристов
         </h3>
         <span>— №5 —</span>
-        <p class="slider__description">Большинство едет в гранд каньон и толпится там
+        <p class="slider__description slider__description-tourists">Большинство едет в гранд каньон и толпится там
         </p>
       </li>
     </ul>
@@ -131,7 +146,8 @@
     <picture>
       <source media="(min-width: 1200px)" srcset="images/map-desktop.jpg 1x, images/map-desktop@2x.jpg 2x">
       <source media="(min-width: 768px)" srcset="images/map-tablet.jpg 1x, images/map-tablet@2x.jpg 2x">
-    <img class="map__photo" src="images/map-mobile.jpg" width="100%" height="350" srcset="images/map-mobile@2x.jpg 2x" alt="Карта">
+      <img class="map__photo" src="images/map-mobile.jpg" width="100%" height="350" srcset="images/map-mobile@2x.jpg 2x"
+           alt="Карта">
     </picture>
   </div>
 </main>
@@ -188,7 +204,7 @@
       </ul>
     </div>
     <div class="copyright main-footer__copyright">
-      <b class="copyright__text">Разработано:</b>
+      <b class="copyright__text">Разработано</b>
       <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
         <svg width="28" height="33" viewBox="0 0 28 33" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path

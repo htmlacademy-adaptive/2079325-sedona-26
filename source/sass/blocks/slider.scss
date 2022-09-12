@@ -7,6 +7,8 @@
   font-weight: 700;
   line-height: 26px;
   text-transform: uppercase;
+  padding: 22px;
+  margin: 0 auto -11px;
 }
 
 .slider__description {
@@ -14,6 +16,21 @@
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
+  margin: 0 auto;
+  padding: 17px 5px;
+}
+
+.slider__description-road {
+  padding: 17px 34px;
+}
+
+.slider__description-tourists {
+  padding: 17px 32px;
+}
+
+.slider__description-square {
+  padding-right: 20px;
+  padding-left: 20px;
 }
 
 .slider__item-devil,
@@ -22,6 +39,7 @@
   color: #ffffff;
   text-align: center;
   width: 100%;
+  padding-top: 4px;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -31,10 +49,16 @@
 .slider__item--small {
   background-color: #eeeeee;
   text-align: center;
+  padding-top: 5px;
+}
+
+.slider__item-last {
+  padding-bottom: 10px;
 }
 
 .slider__item-devil {
   flex-direction: row-reverse;
+  margin-top: 53px;
 }
 
 @media (min-width: $tablet-width) {
@@ -54,4 +78,24 @@
 
 .slider__photo {
   width: 100%;
+  display: block;
+}
+
+.slider__item-city-wrapper {
+  min-height: 221px;
+  padding: 43px 25px 0 20px;
+}
+
+.slider__item-devil-wrapper {
+  padding-top: 12px;
+  padding-bottom: 18px;
+}
+
+.slider__title-road {
+  padding: 26px 26px 22px;
+}
+
+.slider__title-tourists {
+  padding: 29px;
+  padding-bottom: 22px;
 }

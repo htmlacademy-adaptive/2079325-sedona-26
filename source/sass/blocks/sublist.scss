@@ -10,71 +10,137 @@
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
+  margin: 0 auto;
+  padding-top: 16px;
+}
+
+.sublist__description-food {
+  padding-left: 3px;
+}
+
+.sublist__description-gift {
+  padding-top: 13px;
 }
 
 .sublist {
   padding: 0;
   margin: 0 auto;
-  text-align: center;
   list-style-type: none;
+
   @media (min-width: $tablet-width) {
     display: flex;
+    text-align: center;
   }
 }
 
 .sublist__title-house {
   position: relative;
-  padding-top: 100px;
+  padding-top: 31px;
+  margin: 0 auto;
+
 }
 
 .sublist__title-house::before {
   content: "";
   position: absolute;
-  left: 50%;
+  left: -4%;
   transform: translateX(-50%);
   top: 0;
-  background-image: url("../images/icons/icon-house.svg");
+  background-image: url("../images/icons/icon-house-mobile.svg");
   width: 75px;
   height: 70px;
-  margin-bottom: 20px;
+  margin-top: 26px;
   display: block;
   background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+    background-image: url("../images/icons/icon-house.svg");
+    width: 75px;
+    height: 70px;
+    margin-bottom: 20px;
+    display: block;
+    background-repeat: no-repeat;
+  }
 }
 
 .sublist__title-food {
   position: relative;
-  padding-top: 100px;
+  padding-top: 31px;
+  margin: 0 auto;
+  padding-left: 5px;
 }
 
 .sublist__title-food::before {
   content: "";
   position: absolute;
-  left: 50%;
+  left: -5%;
   transform: translateX(-50%);
-  top: 0;
-  background-image: url("../images/icons/burger.svg");
+  top: 15px;
+  background-image: url("../images/icons/icon-burger-mobile.svg");
   width: 75px;
   height: 70px;
-  margin-bottom: 20px;
+  margin-top: 9px;
   display: block;
   background-repeat: no-repeat;
+  margin-left: 2px;
+
+  @media (min-width: $tablet-width) {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+    background-image: url("../images/icons/burger.svg");
+    width: 75px;
+    height: 70px;
+    margin-bottom: 20px;
+    display: block;
+    background-repeat: no-repeat;
+  }
 }
 
 .sublist__title-gift {
   position: relative;
-  padding-top: 100px;
+  padding-top: 28px;
+  margin: 2px auto;
+  margin-left: -3px;
 }
 
 .sublist__title-gift::before {
   content: "";
   position: absolute;
-  left: 50%;
+  left: -4%;
   transform: translateX(-50%);
   top: 0;
-  background-image: url("../images/icons/gift.svg");
+  background-image: url("../images/icons/icon-gift-mobile.svg");
   width: 75px;
   height: 70px;
-  margin-bottom: 20px;
+  margin-top: 21px;
+  margin-left: 5px;
   display: block;
   background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+    background-image: url("../images/icons/gift.svg");
+    width: 75px;
+    height: 70px;
+    margin-bottom: 20px;
+    display: block;
+    background-repeat: no-repeat;
+  }
+}
+
+.sublist__item {
+  padding-left: 65px;
+  padding-right: 20px;
 }

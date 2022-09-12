@@ -4,6 +4,9 @@
     line-height: 26px;
     font-weight: 700;
     text-transform: uppercase;
+    margin: 0 auto;
+    padding: 38px;
+    padding-bottom: 22px;
   }
 }
 
@@ -15,10 +18,12 @@
 }
 
 .search__description {
-  font-size: 21px;
+  font-size: 14px;
   line-height: 18px;
   font-weight: 400;
   text-transform: uppercase;
+  padding: 2px 20px 0 20px;
+  margin: 0 auto 37px;
 }
 
 .search__link {
@@ -30,7 +35,7 @@
   line-height: 26px;
   font-weight: 700;
   display: table;
-  margin: 0 auto;
+  margin: 0 auto 49px;
 }
 
 @media (min-width: $tablet-width) {

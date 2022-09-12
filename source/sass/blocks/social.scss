@@ -1,4 +1,10 @@
 .social__list {
   display: flex;
   list-style-type: none;
+  margin-left: 44px;
+  margin-top: 39px;
+}
+
+.social__item:not(:nth-child(1)) {
+  margin-left: 6px;
 }
