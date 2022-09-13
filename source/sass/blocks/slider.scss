@@ -14,8 +14,7 @@
     font-size: 21px;
     font-weight: 700;
     line-height: 26px;
-    padding-left: 27px;
-    padding-bottom: 23px;
+
   }
 }
 
@@ -34,10 +33,18 @@
 
 .slider__description-road {
   padding: 17px 34px;
+
+  @media (min-width: $tablet-width) {
+    padding: 22px 49px;
+  }
 }
 
 .slider__description-tourists {
   padding: 17px 32px;
+
+  @media (min-width: $tablet-width) {
+    padding: 23px 38px;
+  }
 }
 
 .slider__description-square {
@@ -71,6 +78,11 @@
   background-color: #eeeeee;
   text-align: center;
   padding-top: 5px;
+
+  @media (min-width: $tablet-width) {
+    width: 33.3333%;
+    padding: 22px 0 22px 0;
+  }
 }
 
 .slider__item-last {
@@ -80,11 +92,10 @@
 .slider__item-devil {
   flex-direction: row-reverse;
   margin-top: 53px;
-}
 
-@media (min-width: $tablet-width) {
-  .slider__item--small {
-    width: 33.3333%;
+  @media (min-width: $tablet-width) {
+    margin-top: 59px;
+    padding-top: 0;
   }
 }
 
@@ -119,13 +130,26 @@
 .slider__item-devil-wrapper {
   padding-top: 12px;
   padding-bottom: 18px;
+
+  @media (min-width: $tablet-width) {
+    width: 256px;
+    padding: 21px 25px 0 25px;
+  }
 }
 
 .slider__title-road {
   padding: 26px 26px 22px;
+
+  @media (min-width: $tablet-width) {
+    padding: 20px 40px 23px;
+  }
 }
 
 .slider__title-tourists {
   padding: 29px;
   padding-bottom: 22px;
+
+  @media (min-width: $tablet-width) {
+    padding: 21px 53px 23px 53px;
+  }
 }

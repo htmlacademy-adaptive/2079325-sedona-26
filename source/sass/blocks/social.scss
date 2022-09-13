@@ -3,6 +3,11 @@
   list-style-type: none;
   margin-left: 44px;
   margin-top: 39px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 71px;
+    margin-top: -8px;
+  }
 }
 
 .social__item:not(:nth-child(1)) {

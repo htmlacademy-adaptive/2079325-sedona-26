@@ -1,19 +1,17 @@
-@media (max-width: $mobile-width-only) {
-  .search__title {
-    font-size: 21px;
-    line-height: 26px;
-    font-weight: 700;
-    text-transform: uppercase;
-    margin: 0 auto;
-    padding: 38px;
-    padding-bottom: 22px;
-  }
-}
+.search__title {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0 auto;
+  padding: 38px;
+  padding-bottom: 22px;
 
-@media (min-width: $tablet-width) {
-  .search__title {
+  @media (min-width: $tablet-width) {
     font-size: 30px;
     line-height: 26px;
+    padding-top: 59px;
+
   }
 }
 
@@ -24,6 +22,10 @@
   text-transform: uppercase;
   padding: 2px 20px 0 20px;
   margin: 0 auto 37px;
+
+  @media (min-width: $tablet-width) {
+    padding: 12px 140px 0 140px;
+  }
 }
 
 .search__link {
@@ -40,7 +42,8 @@
 
 @media (min-width: $tablet-width) {
   .search__link {
-    padding: 15px 121px 18px;
+    padding: 15px 136px 18px;
+    margin-top: 47px;
   }
 }
 

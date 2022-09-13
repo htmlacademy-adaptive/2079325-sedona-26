@@ -5,11 +5,17 @@
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
+    justify-content: normal;
   }
 }
 
 .main-footer__hashtag {
   margin-left: 91px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 61px;
+    margin-top: 9px;
+  }
 }
 
 

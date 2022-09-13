@@ -4,4 +4,8 @@
 
 .map {
   margin-bottom: 39px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 57px;
+  }
 }
