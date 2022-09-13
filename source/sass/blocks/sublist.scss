@@ -3,6 +3,10 @@
   font-weight: 700;
   line-height: 26px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+  }
 }
 
 .sublist__description {
@@ -12,14 +16,28 @@
   text-transform: uppercase;
   margin: 0 auto;
   padding-top: 16px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 23px;
+    padding-left: 11px;
+  }
 }
 
 .sublist__description-food {
   padding-left: 3px;
+
+  @media (min-width: $tablet-width) {
+    width: 180px;
+  }
 }
 
 .sublist__description-gift {
   padding-top: 13px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 21px;
+    padding-left: 0;
+  }
 }
 
 .sublist {
@@ -37,6 +55,10 @@
   position: relative;
   padding-top: 31px;
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 8px;
+  }
 
 }
 
@@ -56,13 +78,13 @@
   @media (min-width: $tablet-width) {
     content: "";
     position: absolute;
-    left: 50%;
+    left: 52%;
     transform: translateX(-50%);
-    top: 0;
+    top: -94px;
     background-image: url("../images/icons/icon-house.svg");
     width: 75px;
     height: 70px;
-    margin-bottom: 20px;
+    margin-bottom: 12px;
     display: block;
     background-repeat: no-repeat;
   }
@@ -73,6 +95,10 @@
   padding-top: 31px;
   margin: 0 auto;
   padding-left: 5px;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 0;
+  }
 }
 
 .sublist__title-food::before {
@@ -94,7 +120,7 @@
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    top: 0;
+    top: -75px;
     background-image: url("../images/icons/burger.svg");
     width: 75px;
     height: 70px;
@@ -107,8 +133,11 @@
 .sublist__title-gift {
   position: relative;
   padding-top: 28px;
-  margin: 2px auto;
-  margin-left: -3px;
+  margin: 2px auto 2px -3px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: -7px;
+  }
 }
 
 .sublist__title-gift::before {
@@ -128,12 +157,12 @@
   @media (min-width: $tablet-width) {
     content: "";
     position: absolute;
-    left: 50%;
+    left: 48%;
     transform: translateX(-50%);
-    top: 0;
+    top: -93px;
     background-image: url("../images/icons/gift.svg");
     width: 75px;
-    height: 70px;
+    height: 75px;
     margin-bottom: 20px;
     display: block;
     background-repeat: no-repeat;
@@ -143,4 +172,11 @@
 .sublist__item {
   padding-left: 65px;
   padding-right: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 36px;
+    padding-top: 129px;
+  }
 }
+
+
