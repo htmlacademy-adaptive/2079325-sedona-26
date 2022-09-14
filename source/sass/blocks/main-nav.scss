@@ -6,21 +6,14 @@
 
 .main-nav__wrapper {
   min-height: auto;
-}
 
-@media (min-width: $tablet-width) {
-  .main-nav__wrapper {
+  @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
     width: 100%;
     margin: 0 auto;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .main-nav__wrapper {
-    width: 960px;
-  }
 }
 
 @media (max-width: $mobile-width-only) {

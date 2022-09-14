@@ -26,6 +26,10 @@
   @media (min-width: $tablet-width) {
     padding: 12px 140px 0 140px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 14px 340px 0 340px;
+  }
 }
 
 .search__link {
@@ -38,20 +42,18 @@
   font-weight: 700;
   display: table;
   margin: 0 auto 49px;
-}
+  padding: 16px 49px;
 
 @media (min-width: $tablet-width) {
-  .search__link {
     padding: 15px 136px 18px;
     margin-top: 47px;
   }
-}
 
-@media (max-width: $mobile-width-only) {
-  .search__link {
-    padding: 16px 49px;
+  @media (min-width: $desktop-width) {
+    margin-top: 49px;
   }
 }
+
 
 .search {
   text-align: center;

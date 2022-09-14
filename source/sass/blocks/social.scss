@@ -13,3 +13,9 @@
 .social__item:not(:nth-child(1)) {
   margin-left: 6px;
 }
+
+.social {
+  @media (min-width: $desktop-width) {
+    padding-left: 158px;
+  }
+}

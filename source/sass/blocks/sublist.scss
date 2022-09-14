@@ -20,6 +20,9 @@
   @media (min-width: $tablet-width) {
     padding-top: 23px;
   }
+  @media (min-width: $desktop-width) {
+    padding-left: 15px;
+  }
 }
 
 .sublist__description-food {
@@ -27,6 +30,10 @@
 
   @media (min-width: $tablet-width) {
     width: 180px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 313px;
   }
 }
 

@@ -7,6 +7,10 @@
     flex-direction: row;
     justify-content: normal;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 58px;
+  }
 }
 
 .main-footer__hashtag {
