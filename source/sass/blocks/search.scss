@@ -24,11 +24,11 @@
   margin: 0 auto 37px;
 
   @media (min-width: $tablet-width) {
-    padding: 12px 140px 0 140px;
+    padding: 12px 0 0 0;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 14px 340px 0 340px;
+    padding: 14px 0 0 0;
   }
 }
 
