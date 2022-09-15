@@ -1,6 +1,6 @@
 .attractions__slogan {
   font-weight: 700;
-  font-size: 21px;
+  font-size: 18px;
   line-height: 26px;
   text-transform: uppercase;
   margin: 0 auto;
@@ -8,16 +8,19 @@
 
 .attractions__intro {
   font-weight: 400;
-  font-size: 18px;
-  line-height: 26px;
+  font-size: 14px;
+  line-height: 21px;
   text-transform: uppercase;
   color: #333333;
   margin: 0 auto;
+  padding: 25px 15px 0 15px;
 }
 
 .attractions__item {
   list-style-type: none;
   position: relative;
+  margin-top: 49px;
+
 
   @media (min-width: $tablet-width) {
     width: 50%;
@@ -34,6 +37,7 @@
 
 .attractions__item-photo {
   width: 100%;
+  margin-bottom: -3px;
 }
 
 .attractions__title {
@@ -47,11 +51,13 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
+  margin: -14px auto 12px;
 }
 
 .attractions__list {
   padding: 0;
-  margin: 0 auto;
+  margin: 62px auto;
+  width: 280px;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -67,6 +73,7 @@
 
 .attractions__header {
   text-align: center;
+  margin-top: -21px;
 }
 
 .attractions__description {
@@ -96,4 +103,8 @@
   @media (min-width: $desktop-width) {
     color: #ffffff;
   }
+}
+
+.attractions__like-counter {
+  margin-left: 10px;
 }

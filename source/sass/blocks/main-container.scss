@@ -31,8 +31,8 @@
 }
 
 .main-container__background-image {
-  width: 282px;
-  height: 214px;
+  width: 229px;
+  height: 39px;
   margin: 0 auto;
   display: block;
 
@@ -47,6 +47,8 @@
   background-image: url("../images/back-catalog-mobile.jpg");
   height: 214px;
   background-size: cover;
+  margin-top: -43px;
+  padding-top: 51px;
 
   @media (min-width: $tablet-width) {
     background-image: url("../images/back-catalog-tablet.jpg");
@@ -58,6 +60,7 @@
 
   @media (min-width: $desktop-width) {
     background-image: url("../images/back-catalog-desktop.jpg");
+
 
     @media (min-resolution: 2dppx) {
       background-image: url("../images/back-catalog-desktop@2x.jpg");
