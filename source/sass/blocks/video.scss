@@ -4,6 +4,12 @@
   margin: 0 auto;
   margin-top: 38px;
   margin-bottom: 28px;
+
+  @media (min-width: $tablet-width) {
+    width: 648px;
+    margin-top: 92px;
+    margin-bottom: 78px;
+  }
 }
 
 .video__video {

@@ -29,7 +29,6 @@
   position: relative;
   margin-top: 49px;
 
-
   @media (min-width: $tablet-width) {
     width: 50%;
     margin: 0;
@@ -47,9 +46,14 @@
 .attractions__item-photo {
   width: 100%;
   margin-bottom: -3px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+    height: 267px;
+  }
 }
 
-.attractions__item-photo—first {
+.attractions__item-photo--first {
 
   @media (min-width: $tablet-width) {
     height: 400px;
@@ -64,10 +68,8 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
-    margin: 0 auto;
+    margin: 0;
     grid-area: heading;
-    margin-right: 159px;
-    margin-top: 20px;
   }
 }
 
@@ -78,10 +80,8 @@
   margin: -14px auto 12px;
 
   @media (min-width: $tablet-width) {
-    margin: 0 auto;
+    margin: 0;
     grid-area: author;
-    margin-right: 191px;
-
   }
 }
 
@@ -95,6 +95,7 @@
     flex-wrap: wrap;
     width: 648px;
     margin: 111px auto;
+    margin-bottom: 62px;
   }
 
   @media (min-width: $desktop-width) {
@@ -106,7 +107,6 @@
 
 .attractions__header {
   text-align: center;
-  margin-top: -21px;
 }
 
 .attractions__description {
@@ -115,11 +115,14 @@
   @media (min-width: $tablet-width) {
     background-color: #F2F2F2;
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 50% 50%;
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
     "heading like"
     "author like";
+    padding: 16px 0;
+    align-items: center;
+    padding-left: 20px;
   }
 
   @media (min-width: $desktop-width) {
@@ -140,8 +143,9 @@
 
   @media (min-width: $tablet-width) {
     grid-area: like;
-    margin-left: 240px;
-    margin-top: 25px;
+    margin: 0;
+    margin-left: auto;
+    padding: 0 19px;
   }
 
   @media (min-width: $desktop-width) {
@@ -151,10 +155,13 @@
 
 .attractions__like-counter {
   margin-left: 10px;
+  @media (min-width: $tablet-width) {
+    margin-top: 6px;
+  }
 }
 
 .attractions {
   @media (min-width: $tablet-width) {
-    margin-top: 87px;
+    margin-top: 67px;
   }
 }

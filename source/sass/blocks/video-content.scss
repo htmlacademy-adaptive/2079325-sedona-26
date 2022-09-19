@@ -4,6 +4,10 @@
   line-height: 26px;
   text-transform: uppercase;
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+  }
 }
 
 .video-content__description {
@@ -16,5 +20,4 @@
 
 .video-content {
   text-align: center;
-  margin-top: -20px;
 }
