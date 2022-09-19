@@ -10,6 +10,12 @@
     margin-top: 92px;
     margin-bottom: 78px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 800px;
+    margin-top: 92px;
+    margin-bottom: 121px;
+  }
 }
 
 .video__video {

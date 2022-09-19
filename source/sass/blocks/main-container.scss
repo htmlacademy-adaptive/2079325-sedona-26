@@ -41,6 +41,10 @@
     height: 350px;
   }
 
+  @media (min-width: $desktop-width) {
+
+  }
+
 }
 
 .main-container__background-catalog {
@@ -55,10 +59,12 @@
     width: 768px;
     height: 346px;
     margin-top: -55px;
-    padding-top: 15px;
+    padding-top: 22px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../images/back-catalog-tablet@2x.jpg");
+      width: 1200px;
+      height: 357px;
     }
   }
 
