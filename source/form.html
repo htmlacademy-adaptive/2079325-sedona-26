@@ -11,7 +11,7 @@
   <a class="main-header__logo" href="index.html">
     <img src="images/icons/logo.svg" width="185" height="96" alt="логотип Седоны">
   </a>
-  <nav class="main-nav">
+  <nav class="main-nav main-nav--closed">
     <button class="main-nav__toggle" type="button">
       <span class="visually-hidden">Открыть меню</span>
     </button>
@@ -48,15 +48,15 @@
     <form class="review__full-name-form" action="http://echo.htmlacademy.ru" method="post">
       <div class="review__full-name">
         <h3 class="review__full-name-title">Представьтесь:</h3>
-        <div>
+        <div class="review__block">
           <label class="review__name" for="name">Имя*:</label>
           <input class="review__name-example" type="text" id="name" name="name" placeholder="Пётр" required>
         </div>
-        <div>
+        <div class="review__block">
           <label class="review__surname" for="surname">Фамилия*:</label>
           <input class="review__name-example" type="text" id="surname" name="surname" placeholder="Пустота" required>
         </div>
-        <div>
+        <div class="review__block">
           <label class="review__patronymic" for="patronymic">Отчество*:</label>
           <input class="review__name-example" type="text" id="patronymic" name="patronymic" placeholder="Викторович"
                  required>
@@ -64,12 +64,12 @@
       </div>
       <div class="review__contacts-wrapper">
         <h3 class="review__contacts-title">Контактная информация:</h3>
-        <div>
+        <div class="review__block">
           <label class="review__phone" for="phone">Контактный телефон*:</label>
           <input class="review__contacts-phone" type="text" id="phone" name="phone" placeholder="Введите телефон"
                  required>
         </div>
-        <div>
+        <div class="review__block">
           <label class="review__email" for="email">Электронная почта*:</label>
           <input class="review__contacts-email" type="text" id="email" name="email" placeholder="Введите e-mail"
                  required>
@@ -77,15 +77,15 @@
       </div>
       <div class="review__impression-wrapper">
         <h3 class="review__impression-title">Ваше общее впечатление:</h3>
-        <div>
+        <div class="review__block">
           <input type="radio" id="positive" name="impression" class="visually-hidden review__radio">
           <label class="review__impression" for="positive">Скорее положительное</label>
         </div>
-        <div>
+        <div class="review__block">
           <input type="radio" id="negative" name="impression" class="visually-hidden review__radio">
           <label class="review__impression" for="negative">Скорее отрицательное</label>
         </div>
-        <div>
+        <div class="review__block">
           <input type="radio" id="nothing" name="impression" class="visually-hidden review__radio">
           <label class="review__impression" for="nothing">Затрудняюсь ответить</label>
         </div>

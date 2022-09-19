@@ -7,6 +7,7 @@
   font-size: 18px;
   line-height: 26px;
   text-transform: uppercase;
+  margin: 0 auto;
 }
 
 .review__intro {
@@ -14,6 +15,8 @@
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
+  margin: 0 auto;
+  margin-top: 21px;
 }
 
 .review__full-name-title,
@@ -27,6 +30,12 @@
   text-transform: uppercase;
   text-align: center;
   width: 100%;
+  margin: 0 auto;
+  padding-right: 20px;
+}
+
+.review__places-title {
+  margin-bottom: 19px;
 }
 
 .review__name,
@@ -44,13 +53,15 @@
 
 .review__name-example {
   font-weight: 700;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 26px;
   color: #000000;
   width: 280px;
   height: 58px;
   border: none;
   background-color: #F2F2F2;
+  padding: 0;
+  padding-left: 15px;
 
   @media (min-width: $desktop-width) {
     width: 430px;
@@ -72,7 +83,6 @@
   color: #000000;
   position: relative;
   min-height: 46px;
-  margin-bottom: 10px;
   display: flex;
   align-items: center;
   padding-left: 62px;
@@ -109,7 +119,8 @@
   display: flex;
   align-items: center;
   padding-left: 62px;
-  padding-bottom: 40px;
+  margin-bottom: 26px;
+  padding-top: 10px;
 }
 
 .review__places::before {
@@ -143,6 +154,9 @@
   height: 150px;
   background-color: #F2F2F2;
   border: none;
+  margin-top: 21px;
+  padding-left: 16px;
+  padding-top: 16px;
 
   @media (min-width: $tablet-width) {
     width: 648px;
@@ -156,6 +170,8 @@
 }
 
 .review__full-name-form {
+  margin-top: 53px;
+
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
@@ -168,6 +184,9 @@
 }
 
 .review__full-name {
+  margin-left: 20px;
+  margin-bottom: 63px;
+
   @media (min-width: $tablet-width) {
     width: 50%;
   }
@@ -177,17 +196,23 @@
   }
 }
 
-.review__contacts-wrapper {
+.review__contacts-wrapper,
+.review__impression-wrapper,
+.review__places-wrapper,
+.review__emotions-wrapper {
+  margin-left: 20px;
+  margin-bottom: 58px;
+
   @media (min-width: $tablet-width) {
     width: 50%;
   }
-
   @media (min-width: $desktop-width) {
     width: 50%;
   }
 }
 
 .review__impression-wrapper {
+
   @media (min-width: $tablet-width) {
     width: 578px;
     margin: 0 auto;
@@ -201,12 +226,13 @@
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-  }
 
+  }
 }
 
 .review__places-wrapper {
+margin-top: -10px;
+
   @media (min-width: $tablet-width) {
     width: 578px;
     margin: 0 auto;
@@ -232,12 +258,10 @@
 .review__emotions-wrapper {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
 
   @media (min-width: $tablet-width) {
     width: 100%;
   }
-
   @media (min-width: $desktop-width) {
     width: 100%;
   }
@@ -247,14 +271,15 @@
   background-image: url("../images/icons/form-phone.svg");
   background-repeat: no-repeat;
   background-position: right center;
-  width: 222px;
+  width: 280px;
   height: 58px;
   right: 0;
   border: none;
   background-color: #F2F2F2;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 26px;
   font-weight: 700;
+  padding-left: 15px;
 
   @media (min-width: $desktop-width) {
     width: 344px;
@@ -265,14 +290,15 @@
   background-image: url("../images/icons/form-email.svg");
   background-repeat: no-repeat;
   background-position: right center;
-  width: 222px;
+  width: 280px;
   height: 58px;
   right: 0;
   border: none;
   background-color: #F2F2F2;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 26px;
   font-weight: 700;
+  padding-left: 15px;
 
   @media (min-width: $desktop-width) {
     width: 344px;
@@ -291,6 +317,7 @@
   text-transform: uppercase;
   width: 281px;
   height: 58px;
+  margin-left: 19px;
 
   @media (min-width: $tablet-width) {
     width: 324px;
@@ -302,8 +329,16 @@
   }
 }
 
+.review__emotions-span {
+  text-transform: uppercase;
+  font-size: 12px;
+  padding-left: 163px;
+  padding-top: 4px;
+}
+
 .review__emotions-container {
   display: grid;
+  margin-bottom: 60px;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -321,4 +356,12 @@
     margin-left: 156px;
     width: 227px;
   }
+}
+
+.review {
+    margin-top: 37px;
+}
+
+.review__block {
+  margin-top: 18px;
 }
