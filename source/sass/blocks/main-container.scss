@@ -30,6 +30,17 @@
   }
 }
 
+.main-container__background-image--index {
+  width: 282px;
+  height: 214px;
+  margin: 0 auto;
+  display: block;
+  @media (min-width: $tablet-width) {
+    width: 461px;
+    height: 350px;
+  }
+}
+
 .main-container__background-image {
   width: 229px;
   height: 39px;
@@ -40,11 +51,6 @@
     width: 461px;
     height: 350px;
   }
-
-  @media (min-width: $desktop-width) {
-
-  }
-
 }
 
 .main-container__background-catalog {
