@@ -8,6 +8,10 @@
   line-height: 26px;
   text-transform: uppercase;
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+  }
 }
 
 .review__intro {
@@ -32,10 +36,43 @@
   width: 100%;
   margin: 0 auto;
   padding-right: 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+    padding-left: 18px;
+  }
+}
+
+.review__emotions-title {
+  @media (min-width: $tablet-width) {
+    padding-right: 61px;
+    padding-left: 0;
+  }
+}
+
+.review__impression-title {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 10px;
+  }
+}
+
+.review__contacts-title {
+  @media (min-width: $tablet-width) {
+    padding-left: 0;
+    padding-right: 54px;
+    margin-bottom: 26px;
+  }
+}
+
+.review__full-name-title {
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 9px;
+  }
 }
 
 .review__places-title {
-  margin-bottom: 19px;
+  margin-bottom: 27px;
 }
 
 .review__name,
@@ -161,6 +198,7 @@
   @media (min-width: $tablet-width) {
     width: 648px;
     height: 160px;
+    margin-top: 29px;
   }
 
   @media (min-width: $desktop-width) {
@@ -173,13 +211,9 @@
   margin-top: 53px;
 
   @media (min-width: $tablet-width) {
-    display: flex;
-    flex-wrap: wrap;
   }
 
   @media (min-width: $desktop-width) {
-    display: flex;
-    flex-wrap: wrap;
   }
 }
 
@@ -188,7 +222,10 @@
   margin-bottom: 63px;
 
   @media (min-width: $tablet-width) {
-    width: 50%;
+    width: 100%;
+    margin: 0;
+    padding-left: 59px;
+    padding-top: 55px;
   }
 
   @media (min-width: $desktop-width) {
@@ -204,10 +241,18 @@
   margin-bottom: 58px;
 
   @media (min-width: $tablet-width) {
-    width: 50%;
+    width: 100%;
+    margin: 0;
   }
   @media (min-width: $desktop-width) {
-    width: 50%;
+    width: 100%;
+  }
+}
+
+.review__contacts-wrapper {
+  @media (min-width: $tablet-width) {
+    padding-top: 55px;
+    padding-left: 44px;
   }
 }
 
@@ -219,6 +264,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-bottom: 48px;
   }
 
   @media (min-width: $desktop-width) {
@@ -230,8 +276,13 @@
   }
 }
 
+.review__contacts-wrapper {
+  @media (min-width: $tablet-width) {
+  }
+}
+
 .review__places-wrapper {
-margin-top: -10px;
+  margin-top: -10px;
 
   @media (min-width: $tablet-width) {
     width: 578px;
@@ -239,6 +290,7 @@ margin-top: -10px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin-bottom: 27px;
   }
 
   @media (min-width: $desktop-width) {
@@ -252,6 +304,8 @@ margin-top: -10px;
 .review__places-item {
   @media (min-width: $tablet-width) {
     width: 224px;
+    margin-right: 17px;
+    margin-left: 15px;
   }
 }
 
@@ -261,6 +315,8 @@ margin-top: -10px;
 
   @media (min-width: $tablet-width) {
     width: 100%;
+    padding-left: 60px;
+    margin-bottom: 47px;
   }
   @media (min-width: $desktop-width) {
     width: 100%;
@@ -329,13 +385,6 @@ margin-top: -10px;
   }
 }
 
-.review__emotions-span {
-  text-transform: uppercase;
-  font-size: 12px;
-  padding-left: 163px;
-  padding-top: 4px;
-}
-
 .review__emotions-container {
   display: grid;
   margin-bottom: 60px;
@@ -343,14 +392,22 @@ margin-top: -10px;
   @media (min-width: $tablet-width) {
     display: flex;
     align-items: center;
+    padding-left: 40px;
+    margin-bottom: 108px;
   }
 }
 
 .review__emotions-span {
+    text-transform: uppercase;
+    font-size: 12px;
+    padding-left: 163px;
+    padding-top: 4px;
 
   @media (min-width: $tablet-width) {
     margin-left: 132px;
     width: 192px;
+    padding-left: 32px;
+    font-size: 14px;
   }
   @media (min-width: $desktop-width) {
     margin-left: 156px;
@@ -359,9 +416,24 @@ margin-top: -10px;
 }
 
 .review {
-    margin-top: 37px;
+  margin-top: 37px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 64px;
+  }
 }
 
 .review__block {
-  margin-top: 18px;
+  margin-top: 17px;
+  @media (min-width: $tablet-width) {
+    padding-right: 41px;
+  }
+}
+
+.review__wrapper {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-bottom: 63px;
+  }
 }

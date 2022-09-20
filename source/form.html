@@ -42,37 +42,40 @@
   <section class="review">
     <header class="review__header">
       <h2 class="review__slogan">Оставьте свой отзыв</h2>
-      <p class="review__intro">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами
+      <p class="review__intro">Помогите нашим отелям стать лучше! оставьте отзыв о них,<br class="br"> а также о
+        посещенных вами
         достопримечательностях</p>
     </header>
     <form class="review__full-name-form" action="http://echo.htmlacademy.ru" method="post">
-      <div class="review__full-name">
-        <h3 class="review__full-name-title">Представьтесь:</h3>
-        <div class="review__block">
-          <label class="review__name" for="name">Имя*:</label>
-          <input class="review__name-example" type="text" id="name" name="name" placeholder="Пётр" required>
+      <div class="review__wrapper">
+        <div class="review__full-name">
+          <h3 class="review__full-name-title">Представьтесь:</h3>
+          <div class="review__block">
+            <label class="review__name" for="name">Имя*:</label>
+            <input class="review__name-example" type="text" id="name" name="name" placeholder="Пётр" required>
+          </div>
+          <div class="review__block">
+            <label class="review__surname" for="surname">Фамилия*:</label>
+            <input class="review__name-example" type="text" id="surname" name="surname" placeholder="Пустота" required>
+          </div>
+          <div class="review__block">
+            <label class="review__patronymic" for="patronymic">Отчество*:</label>
+            <input class="review__name-example" type="text" id="patronymic" name="patronymic" placeholder="Викторович"
+                   required>
+          </div>
         </div>
-        <div class="review__block">
-          <label class="review__surname" for="surname">Фамилия*:</label>
-          <input class="review__name-example" type="text" id="surname" name="surname" placeholder="Пустота" required>
-        </div>
-        <div class="review__block">
-          <label class="review__patronymic" for="patronymic">Отчество*:</label>
-          <input class="review__name-example" type="text" id="patronymic" name="patronymic" placeholder="Викторович"
-                 required>
-        </div>
-      </div>
-      <div class="review__contacts-wrapper">
-        <h3 class="review__contacts-title">Контактная информация:</h3>
-        <div class="review__block">
-          <label class="review__phone" for="phone">Контактный телефон*:</label>
-          <input class="review__contacts-phone" type="text" id="phone" name="phone" placeholder="Введите телефон"
-                 required>
-        </div>
-        <div class="review__block">
-          <label class="review__email" for="email">Электронная почта*:</label>
-          <input class="review__contacts-email" type="text" id="email" name="email" placeholder="Введите e-mail"
-                 required>
+        <div class="review__contacts-wrapper">
+          <h3 class="review__contacts-title">Контактная информация:</h3>
+          <div class="review__block">
+            <label class="review__phone" for="phone">Контактный телефон*:</label>
+            <input class="review__contacts-phone" type="text" id="phone" name="phone" placeholder="Введите телефон"
+                   required>
+          </div>
+          <div class="review__block">
+            <label class="review__email" for="email">Электронная почта*:</label>
+            <input class="review__contacts-email" type="text" id="email" name="email" placeholder="Введите e-mail"
+                   required>
+          </div>
         </div>
       </div>
       <div class="review__impression-wrapper">

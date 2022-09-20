@@ -63,17 +63,19 @@
 
     @media (min-resolution: 2dppx) {
       background-image: url("../images/back-catalog-tablet@2x.jpg");
-      width: 1200px;
-      height: 357px;
+      width: 768px;
+      padding-top: 16px;
     }
   }
 
   @media (min-width: $desktop-width) {
     background-image: url("../images/back-catalog-desktop.jpg");
+    width: 1200px;
 
 
     @media (min-resolution: 2dppx) {
       background-image: url("../images/back-catalog-desktop@2x.jpg");
+      width: 1200px;
     }
   }
 }
