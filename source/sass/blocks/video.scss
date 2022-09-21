@@ -1,5 +1,21 @@
 .video {
   position: relative;
+  width: 280px;
+  margin: 0 auto;
+  margin-top: 38px;
+  margin-bottom: 28px;
+
+  @media (min-width: $tablet-width) {
+    width: 648px;
+    margin-top: 92px;
+    margin-bottom: 78px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 800px;
+    margin-top: 92px;
+    margin-bottom: 121px;
+  }
 }
 
 .video__video {
@@ -16,4 +32,8 @@
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+  background: none;
+  border: none;
+  padding: 0;
+  padding-left: 15px;
 }

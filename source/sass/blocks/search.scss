@@ -1,24 +1,35 @@
-@media (max-width: $mobile-width-only) {
-  .search__title {
-    font-size: 21px;
-    line-height: 26px;
-    font-weight: 700;
-    text-transform: uppercase;
-  }
-}
+.search__title {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0 auto;
+  padding: 38px;
+  padding-bottom: 22px;
 
-@media (min-width: $tablet-width) {
-  .search__title {
+  @media (min-width: $tablet-width) {
     font-size: 30px;
     line-height: 26px;
+    padding-top: 59px;
+
   }
 }
 
 .search__description {
-  font-size: 21px;
+  font-size: 14px;
   line-height: 18px;
   font-weight: 400;
   text-transform: uppercase;
+  padding: 2px 20px 0 20px;
+  margin: 0 auto 37px;
+
+  @media (min-width: $tablet-width) {
+    padding: 12px 0 0 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 14px 0 0 0;
+  }
 }
 
 .search__link {
@@ -30,19 +41,31 @@
   line-height: 26px;
   font-weight: 700;
   display: table;
-  margin: 0 auto;
-}
+  margin: 0 auto 49px;
+  padding: 16px 49px;
 
-@media (min-width: $tablet-width) {
-  .search__link {
-    padding: 15px 121px 18px;
+  @media (min-width: $tablet-width) {
+    padding: 15px 136px 18px;
+    margin-top: 47px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 49px;
   }
 }
 
-@media (max-width: $mobile-width-only) {
-  .search__link {
-    padding: 16px 49px;
-  }
+.search__link:hover {
+  background-color: #669EC0;
+  color: #ffffff;
+}
+
+.search__link:active {
+  background-color: #5496BD;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.search__link:disabled {
+  background-color: #E5E5E5;
 }
 
 .search {

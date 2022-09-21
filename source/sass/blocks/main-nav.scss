@@ -6,21 +6,15 @@
 
 .main-nav__wrapper {
   min-height: auto;
-}
 
-@media (min-width: $tablet-width) {
-  .main-nav__wrapper {
+  @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
     width: 100%;
     margin: 0 auto;
+    background-color: #ffffff;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .main-nav__wrapper {
-    width: 960px;
-  }
 }
 
 @media (max-width: $mobile-width-only) {
@@ -30,11 +24,14 @@
 
   .main-nav__toggle {
     position: absolute;
-    right: 0;
-    top: 0;
+    right: 20px;
+    top: 17px;
     width: 22px;
     height: 22px;
     z-index: 1;
+    background-image: url("../images/icons/icon-toggle.svg");
+    border: none;
+    background-color: #ffffff;
   }
 
   .main-nav:not(.main-nav--nojs).main-nav--closed .main-nav__wrapper {
@@ -53,4 +50,12 @@
   .main-nav__toggle {
     display: none;
   }
+}
+
+.main-nav__toggle--opened {
+  display: none;
+}
+
+.main-nav__toggle--closed {
+  display: none;
 }

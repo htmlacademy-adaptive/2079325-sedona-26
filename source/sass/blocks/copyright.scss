@@ -3,4 +3,29 @@
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
+  color: #000000;
+}
+
+.copyright__link {
+  margin-left: 100px;
+  position: absolute;
+  top: -5px;
+  text-decoration: none;
+  display: flex;
+}
+
+.copyright {
+  margin-left: 96px;
+  margin-top: 25px;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 116px;
+    margin-top: 6px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 271px;
+    margin-top: 3px;
+  }
 }

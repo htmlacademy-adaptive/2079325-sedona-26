@@ -7,6 +7,19 @@
   font-weight: 700;
   line-height: 26px;
   text-transform: uppercase;
+  padding: 22px;
+  margin: 0 auto -11px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 26px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 
 .slider__description {
@@ -14,6 +27,33 @@
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
+  margin: 0 auto;
+  padding: 17px 5px;
+
+  @media (min-width: $tablet-width) {
+    padding: 23px 5px 23px 10px;
+  }
+}
+
+.slider__description-road {
+  padding: 17px 34px;
+
+  @media (min-width: $tablet-width) {
+    padding: 22px 49px;
+  }
+}
+
+.slider__description-tourists {
+  padding: 17px 32px;
+
+  @media (min-width: $tablet-width) {
+    padding: 23px 38px;
+  }
+}
+
+.slider__description-square {
+  padding-right: 20px;
+  padding-left: 20px;
 }
 
 .slider__item-devil,
@@ -22,25 +62,57 @@
   color: #ffffff;
   text-align: center;
   width: 100%;
+  padding-top: 4px;
 
   @media (min-width: $tablet-width) {
     display: flex;
   }
 }
 
+.slider__item-city {
+  @media (min-width: $tablet-width) {
+    margin-top: 35px;
+    height: 256px;
+    padding-top: 0;
+  }
+  @media (min-width: $desktop-width) {
+    margin-top: 25px;
+  }
+}
+
+
 .slider__item--small {
   background-color: #eeeeee;
   text-align: center;
+  padding-top: 5px;
+
+  @media (min-width: $tablet-width) {
+    width: 33.3333%;
+    padding: 22px 0 22px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 22px 20px 40px 20px;
+  }
+}
+
+.slider__item-last {
+  padding-bottom: 10px;
 }
 
 .slider__item-devil {
   flex-direction: row-reverse;
-}
+  margin-top: 53px;
 
-@media (min-width: $tablet-width) {
-  .slider__item--small {
-    width: 33.3333%;
+  @media (min-width: $tablet-width) {
+    margin-top: 58px;
+    padding-top: 0;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 78px;
+  }
+
 }
 
 .slider__item-wrapper {
@@ -50,8 +122,67 @@
   @media (min-width: $tablet-width) {
     display: flex;
   }
+
 }
 
 .slider__photo {
   width: 100%;
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    height: 256px;
+  }
+}
+
+.slider__item-city-wrapper {
+  min-height: 221px;
+  padding: 43px 25px 0 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 256px;
+    padding: 19px 25px 0 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 400px;
+    padding: 27px 55px 0 50px;
+  }
+}
+
+.slider__item-devil-wrapper {
+  padding-top: 12px;
+  padding-bottom: 18px;
+
+  @media (min-width: $tablet-width) {
+    width: 256px;
+    padding: 21px 25px 0 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 400px;
+    padding: 29px 80px 0 78px;
+  }
+}
+
+.slider__title-road {
+  padding: 26px 26px 22px;
+
+  @media (min-width: $tablet-width) {
+    padding: 20px 40px 23px;
+  }
+}
+
+.slider__title-tourists {
+  padding: 29px;
+  padding-bottom: 22px;
+
+  @media (min-width: $tablet-width) {
+    padding: 21px 53px 23px 53px;
+  }
+}
+
+.slider__title--small {
+  @media (min-width: $desktop-width) {
+    padding: 21px 110px 22px 110px;
+  }
 }

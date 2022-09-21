@@ -23,7 +23,10 @@ export const styles = () => {
 const server = (done) => {
   browser.init({
     server: {
-      baseDir: 'source'
+      baseDir: 'source',
+      serveStaticOptions: {
+        extensions: ["html"],
+      },
     },
     cors: true,
     notify: false,

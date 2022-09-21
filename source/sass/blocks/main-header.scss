@@ -26,3 +26,10 @@
     position: relative;
   }
 }
+
+.main-header__nav {
+
+  @media (min-width: $tablet-width) {
+    background-color: #ffffff;
+  }
+}

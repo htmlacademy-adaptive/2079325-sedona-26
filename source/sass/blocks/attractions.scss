@@ -1,26 +1,37 @@
 .attractions__slogan {
   font-weight: 700;
-  font-size: 21px;
+  font-size: 18px;
   line-height: 26px;
   text-transform: uppercase;
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+  }
 }
 
 .attractions__intro {
   font-weight: 400;
-  font-size: 18px;
-  line-height: 26px;
+  font-size: 14px;
+  line-height: 21px;
   text-transform: uppercase;
   color: #333333;
   margin: 0 auto;
+  padding: 25px 15px 0 15px;
+
+  @media (min-width: $tablet-width) {
+    padding: 32px 15px 0 15px;
+  }
 }
 
 .attractions__item {
   list-style-type: none;
   position: relative;
+  margin-top: 49px;
 
   @media (min-width: $tablet-width) {
     width: 50%;
+    margin: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -34,6 +45,20 @@
 
 .attractions__item-photo {
   width: 100%;
+  margin-bottom: -3px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+    height: 267px;
+  }
+}
+
+.attractions__item-photo--first {
+
+  @media (min-width: $tablet-width) {
+    height: 400px;
+    margin-top: -30px;
+  }
 }
 
 .attractions__title {
@@ -41,27 +66,44 @@
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    grid-area: heading;
+  }
 }
 
 .attractions__author {
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
+  margin: -14px auto 12px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    grid-area: author;
+  }
 }
 
 .attractions__list {
   padding: 0;
-  margin: 0 auto;
+  margin: 62px auto;
+  width: 280px;
+  margin-bottom: 40px;
 
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
+    width: 648px;
+    margin: 111px auto;
+    margin-bottom: 62px;
   }
 
   @media (min-width: $desktop-width) {
     display: flex;
     flex-wrap: wrap;
     align-items: self-start;
+    width: 1200px;
   }
 }
 
@@ -72,9 +114,17 @@
 .attractions__description {
   width: 100%;
 
-
   @media (min-width: $tablet-width) {
     background-color: #F2F2F2;
+    display: grid;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "heading like"
+    "author like";
+    padding: 16px 0;
+    align-items: center;
+    padding-left: 20px;
   }
 
   @media (min-width: $desktop-width) {
@@ -93,7 +143,38 @@
   font-size: 14px;
   line-height: 21px;
 
+  @media (min-width: $tablet-width) {
+    grid-area: like;
+    margin: 0;
+    margin-left: auto;
+    padding: 0 19px;
+  }
+
+}
+
+.attraction__like--like {
+  fill: #a4a1a1;
+
   @media (min-width: $desktop-width) {
-    color: #ffffff;
+    fill: #ffffff;
+  }
+}
+
+.attractions__like-counter {
+  margin-left: 10px;
+  @media (min-width: $tablet-width) {
+    margin-top: 6px;
+  }
+}
+
+.attractions {
+  margin-top: 37px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 67px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 98px;
   }
 }

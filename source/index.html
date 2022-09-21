@@ -11,9 +11,18 @@
   <a class="main-header__logo" href="index.html">
     <img src="images/icons/logo.svg" width="185" height="96" alt="логотип Седоны">
   </a>
-  <nav class="main-header__nav main-nav main-nav--opened">
+  <nav class="main-header__nav main-nav main-nav--closed">
     <button class="main-nav__toggle" type="button">
       <span class="visually-hidden">Открыть меню</span>
+      <svg class="main-nav__toggle--opened" width="24" height="20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M24 0H0v4h24V0ZM24 8H0v4h24V8ZM24 16H0v4h24v-4Z" fill="#81B3D2"/>
+      </svg>
+      <svg class="main-nav__toggle--closed" width="26" height="25" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M26 3.153 22.72 0 13 9.347 3.28 0 0 3.153 9.72 12.5 0 21.847 3.28 25 13 15.653 22.72 25 26 21.847 16.28 12.5 26 3.153Z"
+          fill="#ffffff"/>
+      </svg>
+
     </button>
     <div class="main-nav__wrapper">
       <ul class="main-nav__list site-list">
@@ -36,7 +45,7 @@
 <main class="main-container">
   <h1 class="visually-hidden">Седона</h1>
   <div class="main-container__background">
-    <img class="main-container__background-image" src="images/icons/text-index-mobile.svg" width="461" height="350"
+    <img class="main-container__background-image--index" src="images/icons/text-index-mobile.svg" width="461" height="350"
          alt="Приветственный текст">
   </div>
   <section class="advantages">
@@ -49,16 +58,19 @@
       <li class="slider__item">
         <div class="slider__item-city">
           <div class="slider__item-city-wrapper">
-            <h3 class="slider__title">Настоящий городок
+            <h3 class="slider__title">Настоящий<br class="br">городок
             </h3>
             <span>— №1 —</span>
             <p class="slider__description">Седона не аттракцион для туристов, там течет своя жизнь
             </p>
           </div>
           <picture>
-            <source media="(min-width: 1200px)" srcset="images/photo-city-desktop.jpg 1x, images/photo-city-desktop@2x.jpg 2x">
-            <source media="(min-width: 768px)" srcset="images/photo-city-tablet.jpg 1x, images/photo-city-tablet@2x.jpg 2x">
-            <img class="slider__photo" src="images/photo-city-mobile.jpg" width="320" height="260" srcset="images/photo-city-mobile@2x.jpg 2x"
+            <source media="(min-width: 1200px)"
+                    srcset="images/photo-city-desktop.jpg 1x, images/photo-city-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)"
+                    srcset="images/photo-city-tablet.jpg 1x, images/photo-city-tablet@2x.jpg 2x">
+            <img class="slider__photo" src="images/photo-city-mobile.jpg" width="320" height="260"
+                 srcset="images/photo-city-mobile@2x.jpg 2x"
                  alt="Фото достопримечательностей в Седоне">
           </picture>
         </div>
@@ -66,64 +78,67 @@
           <li class="sublist__item">
             <h4 class="sublist__title sublist__title-house">Жилье
             </h4>
-            <p class="sublist__description">Рекомендуем пожить в настоящем мотеле, все как в кино!
+            <p class="sublist__description">Рекомендуем&nbsp;пожить&nbsp;в настоящем мотеле,&nbsp;все как&nbsp;в кино!
             </p>
           </li>
           <li class="sublist__item">
             <h4 class="sublist__title sublist__title-food">Еда
             </h4>
-            <p class="sublist__description">Всегда заказывайте фирменный бургер, Вы не разочаруетесь!
+            <p class="sublist__description sublist__description-food">Всегда заказывайте фирменный бургер, Вы&nbsp;не разочаруетесь!
             </p>
           </li>
           <li class="sublist__item">
             <h4 class="sublist__title sublist__title-gift">Сувениры
             </h4>
-            <p class="sublist__description">Не только китайского, но и местного производства!
+            <p class="sublist__description sublist__description-gift">Не только китайского, но и&nbsp;местного&nbsp;производства!
             </p>
           </li>
         </ul>
       </li>
       <li class="slider__item slider__item-devil">
         <div class="slider__item-devil-wrapper">
-          <h3 class="slider__title">Там есть мость Дьявола
+          <h3 class="slider__title">Там есть<br class="br"> мост Дьявола
           </h3>
           <span>— №2 —</span>
           <p class="slider__description">Да, по нему можно пройти! Если вы осмелитесь, конечно
           </p>
         </div>
         <picture>
-          <source media="(min-width: 1200px)" srcset="images/photo-devil's-bridge-desktop.jpg 1x, images/photo-devil's-bridge-desktop@2x.jpg 2x">
-          <source media="(min-width: 768px)" srcset="images/photo-devil's-bridge-tablet.jpg 1x, images/photo-devil's-bridge-tablet@2x.jpg 2x">
-          <img class="slider__photo" src="images/photo-devil's-bridge-mobile.jpg" width="320" height="260" srcset="images/photo-devil's-bridge-mobile@2x.jpg 2x"
+          <source media="(min-width: 1200px)"
+                  srcset="images/photo-devil's-bridge-desktop.jpg 1x, images/photo-devil's-bridge-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)"
+                  srcset="images/photo-devil's-bridge-tablet.jpg 1x, images/photo-devil's-bridge-tablet@2x.jpg 2x">
+          <img class="slider__photo" src="images/photo-devil's-bridge-mobile.jpg" width="320" height="260"
+               srcset="images/photo-devil's-bridge-mobile@2x.jpg 2x"
                alt="Фото моста Дьвола в Седоне">
         </picture>
       </li>
       <li class="slider__item slider__item--small">
-        <h3 class="slider__title">Небольшая площадь
+        <h3 class="slider__title slider__title--small">Небольшая площадь
         </h3>
         <span>— №3 —</span>
-        <p class="slider__description">Все интересные места находятся очень близко
+        <p class="slider__description slider__description-square">Все интересные места находятся очень близко
         </p>
       </li>
       <li class="slider__item slider__item--small">
-        <h3 class="slider__title">Красивая дорога
+        <h3 class="slider__title slider__title-road slider__title--small">Красивая дорога
         </h3>
         <span>— №4 —</span>
-        <p class="slider__description">Ехать в Седону из Лас-Вегаса совсем не скучно!
+        <p class="slider__description slider__description-road">Ехать в Седону из Лас&nbsp;-Вегаса&nbsp;совсем не&nbsp;скучно!
         </p>
       </li>
-      <li class="slider__item slider__item--small">
-        <h3 class="slider__title">Мало туристов
+      <li class="slider__item slider__item--small slider__item-last">
+        <h3 class="slider__title slider__title-tourists slider__title--small">Мало туристов
         </h3>
         <span>— №5 —</span>
-        <p class="slider__description">Большинство едет в гранд каньон и толпится там
+        <p class="slider__description slider__description-tourists">Большинство едет в гранд каньон и толпится там
         </p>
       </li>
     </ul>
   </section>
   <section class="search">
     <h3 class="search__title">Заинтересовались?</h3>
-    <p class="search__description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в
+    <p class="search__description">Укажите предполагаемые даты поездки,<br class="br">и мы покажем вам лучшие предложения гостиниц в
       седоне</p>
     <a class="search__link" href="#">Найти гостиницу</a>
   </section>
@@ -131,7 +146,8 @@
     <picture>
       <source media="(min-width: 1200px)" srcset="images/map-desktop.jpg 1x, images/map-desktop@2x.jpg 2x">
       <source media="(min-width: 768px)" srcset="images/map-tablet.jpg 1x, images/map-tablet@2x.jpg 2x">
-    <img class="map__photo" src="images/map-mobile.jpg" width="100%" height="350" srcset="images/map-mobile@2x.jpg 2x" alt="Карта">
+      <img class="map__photo" src="images/map-mobile.jpg" width="100%" height="350" srcset="images/map-mobile@2x.jpg 2x"
+           alt="Карта">
     </picture>
   </div>
 </main>
@@ -188,8 +204,8 @@
       </ul>
     </div>
     <div class="copyright main-footer__copyright">
-      <b class="copyright__text">Разработано:</b>
       <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+        <b class="copyright__text">Разработано</b>
         <svg width="28" height="33" viewBox="0 0 28 33" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path
             d="M14.1506 0.25H14.0502L0.5 1.58944V25.221L14.0502 32.875L27.5 25.221V1.58944L14.1506 0.25ZM25.5929 11.8266L14.0502 5.32075V5.22507H13.9498L13.8494 5.1294V5.22507L2.40706 11.8266V3.21591L13.9498 2.06782L25.5929 3.21591V11.8266ZM13.9498 6.75587L25.4926 13.1661L20.9758 15.6536L13.8494 11.6353V12.9747L19.7714 16.3233L18.868 16.8017L13.8494 13.9315V15.2709L17.6636 17.4714L16.8606 17.9498L13.8494 16.2276V17.5671L15.7565 18.6195L13.9498 19.6719L2.50743 13.2617L13.9498 6.75587ZM2.40706 14.6968L13.8494 21.2027V22.1595L5.92007 17.6628V19.0022L13.9498 23.5946V24.647L5.92007 20.1503V21.4897L13.9498 26.0821L22.0799 21.3941V16.419L25.4926 14.5055V24.0729L13.9498 30.6745L2.40706 24.1686V14.6968Z"
