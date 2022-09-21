@@ -150,8 +150,13 @@
     padding: 0 19px;
   }
 
+}
+
+.attraction__like--like {
+  fill: #a4a1a1;
+
   @media (min-width: $desktop-width) {
-    color: #ffffff;
+    fill: #ffffff;
   }
 }
 

@@ -3,12 +3,15 @@
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
+  color: #000000;
 }
 
 .copyright__link {
-  margin-left: 12px;
+  margin-left: 100px;
   position: absolute;
   top: -5px;
+  text-decoration: none;
+  display: flex;
 }
 
 .copyright {
